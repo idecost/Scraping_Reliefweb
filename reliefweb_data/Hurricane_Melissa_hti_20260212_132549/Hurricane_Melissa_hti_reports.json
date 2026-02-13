@@ -1,0 +1,667 @@
+{
+  "disaster": "Hurricane Melissa",
+  "country": "Haiti",
+  "country_code": "hti",
+  "total_documents": 31,
+  "total_pdfs": 27,
+  "fetched_on": "2026-02-12T13:26:51.637125",
+  "reports": [
+    {
+      "reliefweb_id": "4197637",
+      "title": "Haiti Key Message Update: Security gains remain limited with no improvement on acute food insecurity, January - May 2026",
+      "date": {
+        "original": "2026-02-06T00:00:00+00:00",
+        "changed": "2026-02-09T02:32:35+00:00",
+        "created": "2026-02-09T02:30:49+00:00"
+      },
+      "url": "https://reliefweb.int/report/haiti/haiti-key-message-update-security-gains-remain-limited-no-improvement-acute-food-insecurity-january-may-2026",
+      "body_text": "<h2>Key Messages</h2>\n<ul>\n<li>Despite some <a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://www.haitilibre.com/en/news-46717-haiti-insecurity-the-reconquest-of-territories-has-begun.html\"><strong>positive developments</strong></a> resulting from intensified law enforcement operations against gangs, <strong>security gains remain limited and insufficient to curb the resurgence of armed violence</strong> and kidnappings, driving Crisis (IPC Phase 3) and Emergency (IPC Phase 4) outcomes across the country. Several neighborhoods in the Port-au-Prince Metropolitan Area (ZMPP) — notably Cité Soleil, Croix-des-Bouquets, Port-au-Prince, and sites hosting internally displaced persons (IDPs) — remain in Emergency (IPC Phase 4), while most rural areas remain in Crisis (IPC Phase 3).</li>\n<li><strong>Pressure on poor urban households and displaced populations is intensifying.</strong> Poor households are increasingly resorting to negative coping strategies, including reducing the number of meals, borrowing, begging, selling productive assets, and internal migration. These strategies contribute to the persistence of Crisis (IPC Phase 3) and Emergency (IPC Phase 4) outcomes and are expected to become more widespread during the lean season, from February to June.</li>\n<li><strong>Clashes between armed groups and security forces, involving targeted operations and the use of heavy weapons and explosives, continue to disrupt mobility, markets, and access to essential services</strong>. Expanding territorial control by gangs limits trade flows, reduces economic activity, and restricts access to livelihoods, while also fueling new internal displacement. According to the <a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://dtm.iom.int/dtm_download_track/89351?file=1&amp;type=node&amp;id=59801\"><strong>International Organization for Migration</strong></a>, armed violence on January 8 in several neighborhoods of Port-au-Prince displaced approximately 5,836 people, most of whom were hosted by families or settled in existing sites, with concentrations in the communes of Port-au-Prince (42 percent), Delmas (29 percent), and Cité Soleil (28 percent).</li>\n<li>The winter agricultural season (pigeon peas, sorghum, beans, and maize) is unfolding amid persistent security constraints and worsening economic conditions. In several areas including Lower Artibonite, Lower Plateau, and the West (particularly Montrouis, Arcahaie, and ZMPP), <strong>lack of regular access to farmland, inputs, and markets due to insecurity has reduced area planted for the winter season, limiting production potential.</strong> Harvests expected between March and May are likely to be below average, reducing agricultural incomes and household food availability, while prolonging dependence on markets between February and May. At the same time, rising prices of agricultural inputs (seeds, fertilizer, fuel), erosion of household purchasing power, limited access to credit, reduced agricultural incomes — along with residual impacts of Hurricane Melissa, particularly in the Grand Sud — are constraining agricultural households’ capacity to invest and to rebuild their productive assets.</li>\n<li><strong>Prices of staple foods remain atypically high and continue to severely limit economic access to food for poor households.</strong> In December 2025, despite relative month-on-month economic stability in most markets, prices of both local and imported food commodities remained well above the five-year average, with fluctuations reaching up to 130 percent above the five-year average, depending on the product and market. This price stability, supported by a relatively stable exchange rate of around 130 HTG/USD, has not translated into improved food access. The purchasing power of poor households remains severely eroded, contributing to the persistence of Crisis (IPC Phase 3) and Emergency (IPC Phase 4) outcomes.</li>\n</ul>\n",
+      "source": [
+        "Famine Early Warning System Network"
+      ],
+      "files": [
+        {
+          "filename": "4197637_20260101-FEWS-NET-ht-kmu-1770416313.pdf",
+          "path": "./reliefweb_data/Hurricane_Melissa_hti_20260212_132549/pdfs/4197637_20260101-FEWS-NET-ht-kmu-1770416313.pdf",
+          "url": "https://reliefweb.int/attachments/c8e7c089-82c9-4298-b804-4cdd73503046/20260101-FEWS-NET-ht-kmu-1770416313.pdf",
+          "size": 456753
+        }
+      ]
+    },
+    {
+      "reliefweb_id": "4197285",
+      "title": "Haiti: Hurricane Melissa Response - Flash Update (Situation Report No. 1 – 1 December 2025 to 4 February 2026)",
+      "date": {
+        "original": "2026-02-05T00:00:00+00:00",
+        "changed": "2026-02-05T14:21:33+00:00",
+        "created": "2026-02-05T12:28:53+00:00"
+      },
+      "url": "https://reliefweb.int/report/haiti/haiti-hurricane-melissa-response-flash-update-situation-report-no-1-1-december-2025-4-february-2026",
+      "body_text": "<p><em>This report is produced with the support of the United Nations Office for the Coordination of Humanitarian Affairs (OCHA), in collaboration with humanitarian partners and based on available information.</em></p>\n<p><strong>HIGHLIGHTS</strong></p>\n<ul>\n<li>4,226 households received shelter and non-food item kits with the support of the International Organization for Migration (IOM) and its partners, mainly in the Grand Sud.</li>\n<li>UNICEF distributed more than 2.4 million liters of safe drinking water, rehabilitated nine water pumps, and reached 25,537 people through cholera-related activities.</li>\n<li>796 households were assessed for gender-based violence (GBV) risks by the United Nations Population Fund (UNFPA), and 660 women and girls received dignity kits.</li>\n<li>World Vision International provided cash assistance to 772 households in the Nippes department.</li>\n<li>170 households (1,223 people) received cash assistance in Belle-Anse, implemented by ACTED under the Rapid Response Mechanism (RRM).</li>\n<li>RODEP supported 400 families with hygiene kits and reached more than 4,000 people through awareness-raising and psychosocial support activities in Petit-Goâve.</li>\n</ul>\n<p><strong>SITUATION OVERVIEW</strong></p>\n<p>Hurricane Melissa struck Haiti in late October 2025. Red alert, the highest alert level, was declared for the Grand Sud (Sud, Grand ’Anse), Nippes, Ouest and Sud-Est, while areas such as Artibonite and Nord-Ouest were placed under orange alert.<br />\nAccording to the General Directorate of Civil Protection (DGPC), 46 people lost their lives, 250,000 people were affected, and approximately 840,000 structures were damaged or destroyed.<br />\nThe departments of Sud, Grand ‘Anse, Sud-Est, Nippes, Ouest, Artibonite and Nord-Ouest were among the most affected. Flooding and landslides impacted homes, social infrastructure, agricultural land and irrigation systems, with consequences for livelihoods and access to essential services.<br />\nThe Central Emergency Response Fund (CERF) activated its Anticipatory Action framework, enabling the mobilization of USD 4 million for targeted preventive interventions.<br />\nThese actions were complemented by a post-shock humanitarian response, implemented in a context of limited resources and increasing needs (see <a href=\"https://reliefweb.int/report/haiti/haiti-ouragan-melissa-flash-update-no-5-au-10-novembre-2025\">Flash Update #5</a>).</p>\n",
+      "source": [
+        "UN Office for the Coordination of Humanitarian Affairs"
+      ],
+      "files": [
+        {
+          "filename": "4197285_SitrepReponseOuraganMelissaFinal_ENG.pdf",
+          "path": "./reliefweb_data/Hurricane_Melissa_hti_20260212_132549/pdfs/4197285_SitrepReponseOuraganMelissaFinal_ENG.pdf",
+          "url": "https://reliefweb.int/attachments/09ce130d-dd41-490b-afa7-fe84b58544fc/SitrepReponseOuraganMelissaFinal_ENG.pdf",
+          "size": 283629
+        }
+      ]
+    },
+    {
+      "reliefweb_id": "4196311",
+      "title": "WFP Haiti Country Brief, December 2025",
+      "date": {
+        "original": "2026-01-28T00:00:00+00:00",
+        "changed": "2026-01-29T12:40:36+00:00",
+        "created": "2026-01-29T11:06:50+00:00"
+      },
+      "url": "https://reliefweb.int/report/haiti/wfp-haiti-country-brief-december-2025",
+      "body_text": "<p><strong>In Numbers</strong></p>\n<p>1,587.77 MT of food distributed*</p>\n<p>USD 3.04 M in cash-based transfers made*</p>\n<p>USD 329.1 M twelve months (January 2026- December 2026) net funding requirements, representing 76% of the total funding required</p>\n<p>737,546 people assisted* in December 2025 *Preliminary numbers</p>\n<p><strong>Operational Updates:</strong></p>\n<p>• In December, WFP supported a total of 737,546 people across operations, including through the distribution of 23,275 hot meals, USD 3.04 million in cash-based transfers (CBT), and 1,587.77 mt of food commodities.</p>\n<p>• Through emergency programmes, WFP reached 196,250 people. Of these, 54,610 received USD 1.2 million in CBT, while 118,365 people received 711.88 mt of food. In addition, WFP distributed 23,275 hot meals to support returnees from the Dominican Republic at two border crossing points, Ouanaminthe and Belladère.</p>\n<p>• WFP provided 864.11 mt of food commodities through school feeding interventions, with 65.1 percent of schoolchildren receiving meals sourced through local procurement (Home-Grown School Feeding), reinforcing sustainable school feeding while supporting local food systems and consumption.</p>\n<p>• Through nutrition activities, WFP reached children and mothers with a package of preventive and curative services. A total of 4,618 children and pregnant and breastfeeding women received nutrition top-up support, while 1,299 others benefited from nutrition sensitization activities to promote improved infant and young child feeding practices. In parallel, WFP provided in-kind nutrition assistance amounting to 11.79 mt to 9,625 beneficiaries, representing 38.3 percent of the targeted population, and conducted nutrition screening for 1,118 individuals to support the early identification and referral of acute malnutrition cases.</p>\n<p>• In December, WFP distributed USD 1.6 million to 94,245 people, either through the national social protection programme Klere Chimen or directly to complement national capacities, in line with the National Social Protection and Promotion Policy (PNPPS).</p>\n<p><strong>WFP end of year highlights:</strong></p>\n<p>• Despite sustained access and security constraints, WFP assisted over 2.5 million people nationwide in 2025, about 22 percent of the population, with cash-based transfers worth USD 40 million, over 25,000 mt of food, and 1 million hot meals. Assistance prioritized IDPs and returnees from the Dominican Republic to meet immediate food needs.</p>\n<p>• As of 31 December, under the Hurricane Melissa response, WFP had reached approximately 167,000 people, representing approximately 74 percent of the 225,000 people targeted, through a combination of in-kind food assistance and cash-based transfers, delivering over 1,146 mt of food commodities alongside USD 1.35 million in emergency assistance to meet immediate food and livelihood needs.</p>\n<p>• In 2025, UNHAS Haiti significantly scaled up its operational capacity. The number of flights increased from 1,450 in 2024 to 2,190 in 2025 (51% increase). Passenger transport almost doubled, rising from 11,490 passengers in 2024 to 22,241 in 2025 (94% increase). UNHAS also expanded its partner reach, supporting more than 190 humanitarian partners in 2025 compared to 157 in 2024 (21% increase). Cargo delivery volumes rose substantially, from 52,980 kg in 2024 to 87,000 kg in 2025 (64% increase). These results underscore the growing reliance on UNHAS services to enable safe access, operational continuity, and timely delivery of humanitarian assistance across Haiti.</p>\n",
+      "source": [
+        "World Food Programme"
+      ],
+      "files": [
+        {
+          "filename": "4196311_WFPHaitiCountryBrief-December2025.pdf",
+          "path": "./reliefweb_data/Hurricane_Melissa_hti_20260212_132549/pdfs/4196311_WFPHaitiCountryBrief-December2025.pdf",
+          "url": "https://reliefweb.int/attachments/3f888eba-9114-432d-bef2-74f77a8b8d95/WFP%20Haiti%20Country%20Brief%20-%20December%202025.pdf",
+          "size": 406896
+        }
+      ]
+    },
+    {
+      "reliefweb_id": "4194684",
+      "title": "Latin America & The Caribbean Weekly Situation Update as of 16 January 2026",
+      "date": {
+        "original": "2026-01-16T00:00:00+00:00",
+        "changed": "2026-01-19T05:12:43+00:00",
+        "created": "2026-01-16T19:29:11+00:00"
+      },
+      "url": "https://reliefweb.int/report/haiti/latin-america-caribbean-weekly-situation-update-16-january-2026",
+      "body_text": "<p><strong>KEY FIGURES</strong></p>\n<ul>\n<li>5.8K people displaced in Port-au-Prince, Haiti as violence escalates</li>\n<li>423 people remain in shelters in Jamaica more than 2 months post-Melissa</li>\n<li>100K people displaced since January 2025 in Catatumbo, Colombia</li>\n</ul>\n<p><strong>SOUTH AMERICA: WILDFIRES</strong></p>\n<p>Wildfires have intensified across Chile and Argentina in early January 2026, driven by severe drought, high temperatures, and strong winds, with Chile reporting 3,839 hectares burned, at least 2 deaths, 10 injuries, and over 2,100 people displaced across multiple central and southern regions including Biobío, Maule, Araucanía, and Valparaíso. Meanwhile, Argentina’s Patagonia is experiencing an extensive emergency, with more than 50,000 hectares burned, mass evacuations of more than 3,000 people, destruction of homes and rural infrastructure, and active fires threatening protected areas such as Los Alerces National Park - home to rare alerce forests. Authorities in both countries warn that historic drought conditions and extreme heat are likely to sustain dangerous fire behavior, while stretched response capacities, particularly in Argentina, where firefighting budgets have seen deep cuts, are complicating containment efforts.</p>\n<p><strong>JAMAICA: HURRICANE MELISSA</strong></p>\n<p>More than 2 months since Hurricane Melissa struck Jamaica as a Category 5 storm, the country continues to face a challenging recovery marked by widespread infrastructure damage, lingering displacement and public health risks. Damage assessments highlight urgent needs for food, safe water, childcare support and building materials. As of 12 January, authorities report 423 people taking refuge in 56 shelters, including 15 schools. Public health concerns remain significant, with 105 suspected and 35 confirmed leptospirosis cases and 14 suspected associated deaths. Despite improving market conditions, food security remains strained in several rural western and northern parishes, where many households are relying on more severe coping strategies. While progress is visible, Jamaica’s recovery remains uneven, and sustained support will be critical in the months ahead.</p>\n<p><strong>COLOMBIA: ARMED VIOLENCE</strong></p>\n<p>One year after violence sharply intensified in Catatumbo, the region remains engulfed in a deepening humanitarian crisis. Ongoing clashes between non‑state armed groups have killed more than 60 people in the past week and continue to affect thousands of civilians, restricting mobility, limiting access to essential services, and driving both displacement and confinement. Since the conflict escalated in January 2025, an estimated 100,000 people have been displaced across the region. Families report living in constant fear amid explosive hazards, targeted violence and coercive restrictions, while damage to infrastructure has deepened hunger and deprived many children of schooling. With humanitarian needs rising and funding far below required levels, communities are being pushed toward increasingly risky coping strategies, further entrenching vulnerability and prolonging the cycle of violence.</p>\n<p><strong>HAITI: VIOLENCE &amp; DISPLACEMENT</strong></p>\n<p>Armed violence in Haiti continues to drive displacement. Between 8-9 January, attacks in Port-au-Prince forced the displacement of approximately 5,836 people (1,635 households). The vast majority (86 per cent) have sought refuge with host families, while the remaining relocated to two pre‑existing displacement sites that were already hosting internally displaced persons prior to these events. These attacks add to a deteriorating security environment marked by escalating violence, shrinking humanitarian access and severe pressure on health services. In the Bel Air neighbourhood in Port-au-Prince, intensifying clashes forced Médecins Sans Frontières to suspend activities. Only 40 per cent of medical facilities in the capital remain functioning.</p>\n",
+      "source": [
+        "UN Office for the Coordination of Humanitarian Affairs"
+      ],
+      "files": [
+        {
+          "filename": "4194684_2026-01-16WeeklySituationUpdateasof16January.pdf",
+          "path": "./reliefweb_data/Hurricane_Melissa_hti_20260212_132549/pdfs/4194684_2026-01-16WeeklySituationUpdateasof16January.pdf",
+          "url": "https://reliefweb.int/attachments/45657f31-a17b-4d23-946a-1e82b0c5c8b1/2026-01-16%20Weekly%20Situation%20Update%20%28as%20of%2016%20January%29.pdf",
+          "size": 533651
+        }
+      ]
+    },
+    {
+      "reliefweb_id": "4192484",
+      "title": "WFP Haiti Country Brief October 2025",
+      "date": {
+        "original": "2025-12-23T00:00:00+00:00",
+        "changed": "2025-12-23T10:05:01+00:00",
+        "created": "2025-12-23T09:32:52+00:00"
+      },
+      "url": "https://reliefweb.int/report/haiti/wfp-haiti-country-brief-october-2025",
+      "body_text": "<p>• In October, WFP supported a total of 681,388 people across operations including through the distribution of 24,336 hot meals,<br />\nUSD 5.6 M in cash-based transfers (CBT), and 464 MT of food commodities.</p>\n<p>• Through its emergency programmes, WFP reached 201,701 people.<br />\nAmong them, 111,015 received USD 2.6 M in CBT, and 66,350 people received 463.39 MT of food. WFP also distributed 24,336 hot meals as part of WFP’s response to support returnees from the Dominican Republic at two border crossing locations (Ouanaminthe and Belladère).</p>\n<p>• WFP provided 2,048,298 meals to 333,733 students across 1,325 schools, with 68.5% of these schools sourcing food through local procurement, supporting sustainable school feeding and local consumption.</p>\n<p>• As part of the cross-cutting nutrition activities embedded in emergency, resilience, and social protection initiatives, WFP partners screened 15,186 children for malnutrition. Of these, 1,992 were referred to as Moderate Acute Malnutrition (MAM) treatment, while 723 required Severe Acute Malnutrition (SAM) treatment.</p>\n<p>• Social and Behaviour Change Communication (SBCC) efforts reached 23,339 people, including 13,952 women, 7,806 men and 1571 pregnant and nursing women, promoting better nutrition practices. Additionally, 1,904 girls and 1,946 boys aged 6–23 months living in IDP sites in the metropolitan area received Lipid-based Nutrient Supplements (LNS) through the Blanket Supplementary Feeding Programme (BSFP).</p>\n<p>• In October, WFP distributed USD 3 M to 111,185 people, either through the national social protection programme &quot;Klere Chimen&quot; or directly to complement national capacities, in line with the National Social Protection and Promotion Policy (PNPPS, for its acronym in French).</p>\n<p>• Ahead of Hurricane Melissa in late October, WFP partnered with the Government to send 3.5 million early warning messages and deliver anticipatory cash transfers via mobile money to 47,000 vulnerable people enrolled in shock-responsive social protection programs, reducing risks and safeguarding lives before impact.</p>\n",
+      "source": [
+        "World Food Programme"
+      ],
+      "files": [
+        {
+          "filename": "4192484_WFPHaitiCountryBrief-October2025.pdf",
+          "path": "./reliefweb_data/Hurricane_Melissa_hti_20260212_132549/pdfs/4192484_WFPHaitiCountryBrief-October2025.pdf",
+          "url": "https://reliefweb.int/attachments/77fd1431-3a6d-4f26-bc26-377e7d7e9387/WFP%20Haiti%20Country%20Brief%20-%20October%202025.pdf",
+          "size": 350779
+        }
+      ]
+    },
+    {
+      "reliefweb_id": "4191149",
+      "title": "UNFPA Hurricane Melissa Regional Situation Report 3 (19 – 30 November 2025)",
+      "date": {
+        "original": "2025-12-12T00:00:00+00:00",
+        "changed": "2025-12-15T00:38:51+00:00",
+        "created": "2025-12-15T00:38:10+00:00"
+      },
+      "url": "https://reliefweb.int/report/haiti/unfpa-hurricane-melissa-regional-situation-report-3-19-30-november-2025",
+      "body_text": "<p>With tens of thousands still displaced, livelihoods disrupted, and health facilities damaged across the Caribbean, the impact from Hurricane Melissa continues to create dire humanitarian needs, with women and girls disproportionately impacted.</p>\n<p>Contaminated and stagnant floodwaters are heightening health risks, contributing to outbreaks of arboviral diseases in Cuba, leptospirosis in Jamaica, and cholera in Haiti. Pregnant women face heightened danger, as infections can lead to serious complications for both the mother and baby.</p>\n<p>In coordination with national authorities, UN agencies and local partners, UNFPA is delivering life-saving sexual and reproductive health services and gender-based violence prevention and response across Jamaica, Haiti and Cuba.</p>\n<p>Through support to 51 health facilities, four mobile clinics and nine women and girls’ safe spaces, UNFPA reached 22,061 people with sexual and reproductive health and gender-based violence services between 19-30 November 2025.</p>\n<p>However, with only 4 per cent of UNFPA’s US$9.93 million appeal funded, without urgent support, critical gaps in care will widen, and women and girls will be left without essential and lifesaving health and protection services</p>\n",
+      "source": [
+        "United Nations Population Fund"
+      ],
+      "files": [
+        {
+          "filename": "4191149_RegionalSitRep3_HurricaneMelissa.pdf",
+          "path": "./reliefweb_data/Hurricane_Melissa_hti_20260212_132549/pdfs/4191149_RegionalSitRep3_HurricaneMelissa.pdf",
+          "url": "https://reliefweb.int/attachments/e8b7f420-b1b8-44dd-95c7-137cb085c06a/Regional%20SitRep%203_Hurricane%20Melissa.pdf",
+          "size": 5061730
+        }
+      ]
+    },
+    {
+      "reliefweb_id": "4190874",
+      "title": "Haiti Key Message Update: Hurricane Melissa and persistent insecurity worsen acute food insecurity, November 2025",
+      "date": {
+        "original": "2025-12-10T00:00:00+00:00",
+        "changed": "2025-12-11T07:08:04+00:00",
+        "created": "2025-12-11T07:07:48+00:00"
+      },
+      "url": "https://reliefweb.int/report/haiti/haiti-key-message-update-hurricane-melissa-and-persistent-insecurity-worsen-acute-food-insecurity-november-2025",
+      "body_text": "<h2>Key Messages</h2>\n<ul>\n<li><strong>Several areas of the Port-au-Prince Metropolitan Zone (ZMPP),</strong> including Cité Soleil, Croix-des-Bouquets, Port-au-Prince, and IDP sites, <strong>remain in Emergency (IPC Phase 4)</strong>, while most rural areas of the country remain in <strong>Crisis (IPC Phase 3)</strong>. Poor households face a combination of crop losses, atypically high food prices, and persistent insecurity, leading to increased reliance on negative coping strategies such as reducing the number of daily meals, selling productive assets, forced migration, contracting risky debt, begging, and resorting to informal or high-risk mechanisms, including survival sex. FEWS NET estimates that <strong>between 3.0 and 3.49 million people will require food assistance between November 2025 and May 2026</strong>, with needs peaking during the lean season (April–May).</li>\n<li><strong>Insecurity continues to deteriorate in the ZMPP, Artibonite, and Central Plateau.</strong> Armed group activity is paralyzing mobility, markets, and essential services, exacerbating internal displacement affecting more than <strong>1.4 million people</strong>, including <strong>210,000 in the ZMPP</strong>. According to <a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://db6ccff4-92a1-45a0-94bd-252b209bc70d.filesusr.com/ugd/ba01d2_9028fc6878e842f09be8f5ea0169661f.pdf\"><strong>PLSO</strong></a>, <strong>no major area is considered safe</strong>. BINUH reports <strong>1,247 deaths, 710 injuries, 145 kidnappings, and more than 400 cases of sexual violence linked to gang activity during Q3 2025</strong>. Since September, approximately <strong>45,000 people have been displaced</strong>, some multiple times (<a href=\"https://reliefweb.int/report/haiti/suivi-des-reponses-aux-urgences-suite-aux-deplacements-lies-aux-attaques-saint-marc-ett-76\"><strong>CCCM</strong></a>).</li>\n<li><strong>The impacts of Hurricane Melissa at the end of October, with rainfall totals exceeding 250 mm, have significantly worsened food security conditions in several regions.</strong> According to the <a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://news.un.org/fr/audio/2025/11/1157797\"><strong>WFP</strong></a>, <strong>more than 1.25 million people were affected</strong> in the South, Southeast, Nippes, Grand’Anse, and West departments, with over <strong>11,900 homes flooded or damaged</strong> and nearly <strong>16,000 people sheltered in temporary facilities</strong>. Agricultural losses are substantial, including the destruction of autumn crops (banana, maize, sorghum, roots and tubers, pigeon peas) in the hardest-hit communes, damage to irrigation infrastructure, and road blockages limiting market access. These shocks have sharply reduced food availability and household agricultural income.</li>\n<li><strong>Food prices remain atypically high nationwide, well above the five-year average</strong>, driven by the seasonal absence of harvests and crop losses from Hurricane Melissa. In hurricane-affected areas, price increases are particularly pronounced. For example, yellow maize in Jérémie rose <strong>31 percent between September and October</strong> — further constraining poor households’ economic access to food.</li>\n<li><strong>Despite significant scale up in areas affected by Hurricane Melissa, emergency food assistance remains far below needs.</strong> Of the <strong>360,000 people identified by WFP as requiring immediate assistance</strong>, only <strong>12,700 (3.5 percent)</strong> were reached during initial distributions. A second phase aims to assist about <strong>190,000 people</strong>, but implementation depends on security, logistics, and funding. According to <a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://news.un.org/fr/story/2025/11/1157806\"><strong>OCHA</strong></a>, the <strong>Humanitarian Response Plan for Haiti, estimated at $908 million, is only 21 percent funded</strong>.</li>\n</ul>\n",
+      "source": [
+        "Famine Early Warning System Network"
+      ],
+      "files": [
+        {
+          "filename": "4190874_ht-kmu-2025-11-1765436823.pdf",
+          "path": "./reliefweb_data/Hurricane_Melissa_hti_20260212_132549/pdfs/4190874_ht-kmu-2025-11-1765436823.pdf",
+          "url": "https://reliefweb.int/attachments/cfceae78-3c4f-4ea0-b630-4ecdeeea7677/ht-kmu-2025-11-1765436823.pdf",
+          "size": 460357
+        }
+      ]
+    },
+    {
+      "reliefweb_id": "4189761",
+      "title": "Haiti - Seasonal Monitor: Below-average rainfall in November over Haiti (December 2, 2025)",
+      "date": {
+        "original": "2025-12-02T00:00:00+00:00",
+        "changed": "2025-12-03T03:10:18+00:00",
+        "created": "2025-12-03T03:09:49+00:00"
+      },
+      "url": "https://reliefweb.int/report/haiti/haiti-seasonal-monitor-below-average-rainfall-november-over-haiti-december-2-2025",
+      "body_text": "<h2>Key Messages</h2>\n<ul>\n<li>Below-average rainfall over Haiti during November 2025.</li>\n<li>Average rainfall forecast for next seven days suggest average conditions.</li>\n</ul>\n<h2>Below-average rainfall after hurricane Melissa over Haiti</h2>\n<p>Hurricane Melissa brought catastrophic impacts to Haiti in late October, resulting in fatalities and significant damage to infrastructure and cropland. The highest rainfall totals—exceeding 300 percent of the historical average—were reported in Grand'Anse, Sud, Nippes, Sud-Est, Ouest, and L'Artibonite. Over a five-day period, rainfall surpassed 400 mm. The accompanying gusty winds, flooding, and landslides damaged irrigation systems, which could pose a challenge for farmers in the upcoming planting seasons.</p>\n<p>Since the beginning of November, rainfall has been sporadic and light. This has aided the drainage of flooded areas, replenished water storage in reservoirs, and facilitated crop activity in areas where irrigation systems were not severely affected. As shown in Figure 1, rainfall across most of Haiti for the period of November 11-20 did not exceed 30 percent of the usual amounts, which supports recovery efforts and crop development. Additionally, observed high temperatures are directly related to above-average evapotranspiration rates.</p>\n<p>The rainfall forecast for next seven days (Figure 2) indicates average conditions for Haiti. This is favorable for agricultural activities and allows for the utilization of excess rainfall following Hurricane Melissa. Temperatures are expected to be slightly above-average, providing some relief to communities engaged in rebuilding infrastructure and production systems.</p>\n",
+      "source": [
+        "Famine Early Warning System Network"
+      ],
+      "files": [
+        {
+          "filename": "4189761_ht-sm-2025-12-02-1764718595.pdf",
+          "path": "./reliefweb_data/Hurricane_Melissa_hti_20260212_132549/pdfs/4189761_ht-sm-2025-12-02-1764718595.pdf",
+          "url": "https://reliefweb.int/attachments/3bdbc8a6-42a2-4b3f-bee2-def7be7ba57f/ht-sm-2025-12-02-1764718595.pdf",
+          "size": 335585
+        }
+      ]
+    },
+    {
+      "reliefweb_id": "4189461",
+      "title": "How acting early helped people prepare for Hurricane Melissa",
+      "date": {
+        "original": "2025-12-01T00:00:00+00:00",
+        "changed": "2025-12-01T14:22:04+00:00",
+        "created": "2025-12-01T10:35:58+00:00"
+      },
+      "url": "https://reliefweb.int/report/haiti/how-acting-early-helped-people-prepare-hurricane-melissa",
+      "body_text": "<p>When Hurricane Melissa intensified to Category 5, threatening Jamaica, Cuba, and Haiti, OCHA and partners activated <strong>anticipatory action (AA)</strong> frameworks to mitigate its impact.</p>\n<p>Using early forecasts, US$4 million from OCHA-managed UN Global Emergency Fund (CERF) was released within hours for Haiti, enabling life-saving evacuations, cash transfers, emergency shelters, and water, sanitation and hygiene (WASH) kits for over 100,000 vulnerable people. Similar measures in Cuba supported 170,000 people, providing safe shelter, health supplies, food, and generators.</p>\n<p>This proactive approach – triggered by <strong>pre-agreed thresholds</strong> – helped prevent loss of life and reduce suffering. <strong>AA</strong> reflects the Humanitarian Reset principles: locally led, globally supported, and community-rooted, demonstrating how early action fosters resilience and efficiency in disaster response.</p>\n<p>As the <a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://www.anticipation-hub.org/events/13th-global-dialogue-platform-on-anticipatory-humanitarian-action-10th-anniversary-edition\"><strong>Global Dialogue Platform on Anticipatory Action</strong></a> begins this week in Berlin (2–4 December), read on to find out what this approach achieved, underscoring the importance of coordination and innovation that shifts humanitarian response from reaction to anticipation: <a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://www.unocha.org/news/forecast-frontline-how-acting-early-helped-people-prepare-hurricane-melissa\">From forecast to frontline: how acting early helped people prepare for Hurricane Melissa | OCHA</a></p>\n<p><em>Posted December 2025.</em></p>\n<p><em>Pooled Fund impact stories.</em></p>\n",
+      "source": [
+        "UN Office for the Coordination of Humanitarian Affairs"
+      ],
+      "files": []
+    },
+    {
+      "reliefweb_id": "4188877",
+      "title": "Hurricane Melissa and the rise of household vulnerability in Haiti",
+      "date": {
+        "original": "2025-11-24T00:00:00+00:00",
+        "changed": "2025-11-27T06:19:30+00:00",
+        "created": "2025-11-26T15:33:38+00:00"
+      },
+      "url": "https://reliefweb.int/report/haiti/hurricane-melissa-and-rise-household-vulnerability-haiti",
+      "body_text": "",
+      "source": [
+        "World Food Programme"
+      ],
+      "files": [
+        {
+          "filename": "4188877_REPORTHURICANMELISSAANDVULNERABILITYINHAITI1.pdf",
+          "path": "./reliefweb_data/Hurricane_Melissa_hti_20260212_132549/pdfs/4188877_REPORTHURICANMELISSAANDVULNERABILITYINHAITI1.pdf",
+          "url": "https://reliefweb.int/attachments/9bdb3bb1-5a58-40d3-b23e-75144793c7f1/REPORT%20HURICAN%20MELISSA%20AND%20VULNERABILITY%20IN%20HAITI%20%20%281%29.pdf",
+          "size": 2193909
+        }
+      ]
+    },
+    {
+      "reliefweb_id": "4188743",
+      "title": "UNFPA Hurricane Melissa Regional Situation Report 2 (8 - 18 November)",
+      "date": {
+        "original": "2025-11-26T00:00:00+00:00",
+        "changed": "2025-11-26T02:03:37+00:00",
+        "created": "2025-11-26T02:02:14+00:00"
+      },
+      "url": "https://reliefweb.int/report/haiti/unfpa-hurricane-melissa-regional-situation-report-2-8-18-november",
+      "body_text": "<p>Hurricane Melissa caused extensive human and material losses across Jamaica, Haiti and Cuba. Although humanitarian response and recovery efforts are underway, the needs of those affected remain urgent and immense.</p>\n<p>Health services, including sexual and reproductive health (SRH), have been severely disrupted. Damage to health facilities and supplies is making it difficult to ensure the continuity of critical services such as emergency obstetric care and prenatal check-ups.</p>\n<p>Stagnant floodwaters combined with damaged infrastructure have also created sanitation issues, raising the risk of infectious disease outbreaks. In Cuba, health risks are compounded by existing outbreaks of arboviral diseases, which are particularly high-risk for pregnant women and their babies.</p>\n<p>A total of 5,064 people remain in shelters across Jamaica, Haiti and Cuba. Many of these facilities are operating with limited resources and are struggling to meet essential needs such as clean water and menstrual hygiene supplies. Thousands of women and girls are living in conditions that lack adequate privacy, security, and separate sanitation facilities, which increases their vulnerability to gender-based violence (GBV).</p>\n<p>UNFPA continues to actively contribute to inter-agency coordination efforts to ensure that SRH and GBV priorities are fully integrated into the collective response to Hurricane Melissa.</p>\n<p>Between 8-18 November 2025, UNFPA and its implementing partners reached 1,350 people with SRH services through support to 13 health facilities and three mobile clinics. A total of 1,659 people were also reached with GBV prevention, mitigation, and response activities through six UNFPA-supported women and girls’ safe spaces. Dignity kits were provided to 1,621 women and adolescent girls, 160 new mothers received mama kits, and 442 women and girls affected by the hurricane received psychosocial support.</p>\n<p>UNFPA is appealing for US$9.93 million for the Hurricane Melissa response. Currently, only US$250,000 has been funded, leaving a US$9.68 million gap. Additional funding is urgently needed to ensure that critical and lifesaving health and protection services are available to women and girls affected.</p>\n",
+      "source": [
+        "United Nations Population Fund"
+      ],
+      "files": [
+        {
+          "filename": "4188743_UNFPARegionalSitRep2_HurricaneMelissa.pdf",
+          "path": "./reliefweb_data/Hurricane_Melissa_hti_20260212_132549/pdfs/4188743_UNFPARegionalSitRep2_HurricaneMelissa.pdf",
+          "url": "https://reliefweb.int/attachments/172dcfd1-3b22-4e8b-9300-79d5349fdd67/UNFPA%20Regional%20SitRep%202_Hurricane%20Melissa.pdf",
+          "size": 2507912
+        }
+      ]
+    },
+    {
+      "reliefweb_id": "4188741",
+      "title": "UNICEF Haiti Flash Update No. 3 (Hurricane MELISSA) - 24 October-24 November 2025",
+      "date": {
+        "original": "2025-11-25T00:00:00+00:00",
+        "changed": "2025-11-26T01:27:51+00:00",
+        "created": "2025-11-26T01:25:04+00:00"
+      },
+      "url": "https://reliefweb.int/report/haiti/unicef-haiti-flash-update-no-3-hurricane-melissa-24-october-24-november-2025",
+      "body_text": "<p><strong>Highlights</strong></p>\n<ul>\n<li>Hurricane Melissa caused severe flooding, landslides and extensive infrastructure damage in the Southern departments (South, South-East, Nippes, Grand’Anse) and the Palmes region (Ouest) in Haiti.</li>\n<li>According to the General Directorate of Civil Protection (DGPC), 245,545 people are directly affected — 50% in the Southern region. 46 fatalities (including 7 children and 6 persons aged 60+), 394 injured and 9 missing were reported.</li>\n<li>4,409 schools affected, including 113 partially damaged and 19 destroyed, impacting 127,603 children and over 4,000 teachers. 253 schools are currently used as temporary shelters.</li>\n<li>19,424 homes flooded, 11,557 homes damaged and 1,516 destroyed.</li>\n<li>13,302 latrines affected across impacted municipalities.</li>\n<li>75 communal irrigation canals damaged, affecting agricultural livelihoods.</li>\n<li>63 drinking water systems damaged (17 in the South, 13 in Grand’Anse: 24 in South-East, 9 in Nippes departments).</li>\n<li>High risk of cholera and acute watery diarrhea (AWD) outbreaks, particularly in flood-prone areas.</li>\n</ul>\n<p><strong>Situation Update</strong></p>\n<p>Hurricane Melissa struck Haiti between 21 October and 4 November, with torrential rains and powerful winds that caused extensive flooding and landslides (28-29 November), washing out roads and collapsing bridges. Several municipalities were temporarily isolated, severely restricting humanitarian access. Families were displaced and sought refuge in schools and churches, while healthcare services in Sud, Grand’Anse, and Petit-Goâve were disrupted due to limited access. The contamination of water sources has heightened the risk of waterborne disease outbreaks, including cholera and acute watery diarrhea, and severe agricultural losses are expected to further worsen food insecurity. Rapid assessments are underway, with inter-agency needs evaluations planned by the end of November.</p>\n",
+      "source": [
+        "UN Children's Fund"
+      ],
+      "files": [
+        {
+          "filename": "4188741_UNICEFHaitiFlashReportNo.3HurricaneMELISSA24October-24November2025.pdf",
+          "path": "./reliefweb_data/Hurricane_Melissa_hti_20260212_132549/pdfs/4188741_UNICEFHaitiFlashReportNo.3HurricaneMELISSA24October-24November2025.pdf",
+          "url": "https://reliefweb.int/attachments/0e5781e5-4535-44d9-be38-0dc7f122c7a3/UNICEF%20Haiti%20Flash%20Report%20No.%203%20%28Hurricane%20MELISSA%29%2024%20October-24%20November%202025.pdf",
+          "size": 299010
+        }
+      ]
+    },
+    {
+      "reliefweb_id": "4188314",
+      "title": "Hurricane Melissa SitRep - GBV Subcluster Haiti (October 31 - November 15, 2025)",
+      "date": {
+        "original": "2025-11-24T00:00:00+00:00",
+        "changed": "2025-11-24T05:54:45+00:00",
+        "created": "2025-11-24T05:51:23+00:00"
+      },
+      "url": "https://reliefweb.int/report/haiti/hurricane-melissa-sitrep-gbv-subcluster-haiti-october-31-november-15-2025",
+      "body_text": "<p><strong>Highlights</strong></p>\n<p>Nearly 254,545 people are affected by Hurricane Melissa across seven departments of the country.</p>\n<p>More than 16 thousand people have been displaced and housed in temporary shelters. A state of emergency has been declared for three months, from November 3, 2025, to February 3, 2026, in the Southern, Southeastern, Grand'Anse, Nippes, Western, and Northwestern departments, in order to intensify the response and guarantee the safety of the affected populations.</p>\n<p><strong>Situation Overview</strong></p>\n<p>As of November 3, Hurricane Melissa has caused heavy human losses (43 deaths, 21 injured, 13 missing) and material damage, including over 11,900 homes flooded and 4,433 destroyed or damaged in the South, Grand'Anse, South East, Nippes, West, Artibonite, and North West departments. The DGPC anticipates up to 2.3 million affected people. Approximately 16,000 people have been displaced and are taking refuge in shelters where urgent needs include food, drinking water, hygiene kits, and health care. The increased exposure of women and girls to GBV risks in precarious shelters requires an immediate intensification of protection prevention and response activities. The state of emergency decreed for three months aims to reinforce assistance to victims, secure the affected areas, and facilitate the return of essential services.</p>\n",
+      "source": [
+        "Gender Based Violence Area of Responsibility",
+        "Government of Haiti",
+        "Protection Cluster",
+        "United Nations Population Fund"
+      ],
+      "files": [
+        {
+          "filename": "4188314_HurricaneMelissa_SubclusterGBVSitRepEN_31.10-15.11.pdf",
+          "path": "./reliefweb_data/Hurricane_Melissa_hti_20260212_132549/pdfs/4188314_HurricaneMelissa_SubclusterGBVSitRepEN_31.10-15.11.pdf",
+          "url": "https://reliefweb.int/attachments/77fe82b3-1b21-41db-80c1-4c5bb25739d0/Hurricane%20Melissa_Subcluster%20GBV%20SitRep%20EN_31.10%20-%2015.11.pdf",
+          "size": 1185553
+        }
+      ]
+    },
+    {
+      "reliefweb_id": "4187134",
+      "title": "Haiti: Food Security Outlook, October 2025 - May 2026: Persistent insecurity and the effects of Hurricane Melissa maintain Crisis (IPC Phase 3) and Emergency (IPC Phase 4) food insecurity",
+      "date": {
+        "original": "2025-11-17T00:00:00+00:00",
+        "changed": "2025-11-17T02:47:42+00:00",
+        "created": "2025-11-17T02:39:33+00:00"
+      },
+      "url": "https://reliefweb.int/report/haiti/haiti-food-security-outlook-october-2025-may-2026-persistent-insecurity-and-effects-hurricane-melissa-maintain-crisis-ipc-phase-3-and-emergency-ipc-phase-4-food-insecurity",
+      "body_text": "<h2>Key Messages</h2>\n<ul>\n<li>The persistence of gang violence continues to cause forced displacement of the population, disrupt income-earning activities, and affect typical market functioning. <strong>Between October 2025 and May 2026, Emergency (IPC Phase 4) outcomes are expected in Cité Soleil, Port-au-Prince, Croix-des-Bouquets, as well as among internally displaced persons (IDPs) living in sites in the Port-au-Prince Metropolitan Area (ZMPP).</strong> At the same time, Crisis (IPC Phase 3) outcomes are anticipated in several departments of the country.</li>\n<li>As insecurity intensifies, particularly in the ZMPP, and gang activity expands into Artibonite and Centre, <strong>between 3.0 and 3.49 million people will be in need of food assistance between October 2025 and May 2026, and peak between April and May 2026.</strong></li>\n<li>More than <strong>1.4 million</strong> <a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://dtm.iom.int/reports/haiti-report-displacement-situation-haiti-round-11-september-2025?close=true\"><strong>IDPs</strong></a> are recorded in Haiti, including approximately 210,000 in precarious sites in the ZMPP, with limited access to markets and essential services. IDPs have lost their livelihoods and depend on limited and intermittent food assistance.</li>\n<li><strong>The passage of Hurricane Melissa caused extensive losses of autumn crops and livestock across the Grand Sud( Sud, Sud-Est, Nippes, Grand'Anse), as well as parts of Ouest and Artibonite.</strong> Flooding damaged key transportation infrastructure, social facilities, and IDP shelter sites. These impacts compromise the income and food access of affected households and have led to an increase in the number of people in need between November and December 2025.</li>\n<li><strong>Inflation remains high, reaching 31.9 percent</strong>, while food inflation exceeds 35 percent in September 2025. Prices increased by 1.8 percent between August and September 2025. Food commodity prices remain significantly above the five-year average, reducing household purchasing power.</li>\n<li><em><strong>The analysis in this report is based on information available as of October 31, 2025.</strong></em></li>\n</ul>\n",
+      "source": [
+        "Famine Early Warning System Network"
+      ],
+      "files": [
+        {
+          "filename": "4187134_ht-fso-2025-10-1763170499.pdf",
+          "path": "./reliefweb_data/Hurricane_Melissa_hti_20260212_132549/pdfs/4187134_ht-fso-2025-10-1763170499.pdf",
+          "url": "https://reliefweb.int/attachments/af36576a-6701-4c5c-b4ed-8cd18b159351/ht-fso-2025-10-1763170499.pdf",
+          "size": 1029845
+        }
+      ]
+    },
+    {
+      "reliefweb_id": "4186573",
+      "title": "Haiti: Tropical Storm Melissa - Flash Update No.5 (as of 10 November 2025)",
+      "date": {
+        "original": "2025-11-12T00:00:00+00:00",
+        "changed": "2025-11-13T02:10:12+00:00",
+        "created": "2025-11-12T16:20:26+00:00"
+      },
+      "url": "https://reliefweb.int/report/haiti/haiti-tropical-storm-melissa-flash-update-no5-10-november-2025",
+      "body_text": "<p><em>This report is produced with the support of the United Nations Office for the Coordination of Humanitarian Affairs (OCHA), in collaboration with humanitarian partners and based on available information</em></p>\n<p><strong>HIGHLIGHTS</strong></p>\n<ul>\n<li>43 deaths, 21 injured, and 13 missing persons reported.</li>\n<li>More than 11,900 houses flooded or damaged.</li>\n<li>Around 16,000 people sought shelter in temporary sites ; 1,749 remain in 10 shelters.</li>\n<li>The World Food Programme (WFP) plans to assist 190,000 people with 1,784 metric tons of food and USD 6.7 million in cash-based transfers (CBT).</li>\n<li>Humanitarian partners have distributed more than 3,000 tarpaulins and 2,000 hygiene kits and continue interventions in water, health, education, and protection sectors.</li>\n<li>The United Nations Humanitarian Air Service (UNHAS) has expanded its operations, opening five new access points to facilitate the delivery of assistance to the hardest-hit areas.</li>\n</ul>\n<p><strong>SITUATION OVERVIEW</strong></p>\n<p>As of 3 November, the Directorate of Civil Protection (DGPC) reported that Hurricane Melissa caused significant human and material losses across several regions of the country. A total of 43 people lost their lives, 21 were injured, and 13 remain missing. Among the fatalities, 25 occurred in Petit-Goâve (West Department), including 10 children. Over 11,900 houses were flooded, 176 destroyed, and 4,257 damaged to varying degrees. Around 16,000 people had sought refuge in temporary shelters.</p>\n<p>According to the DGPC, the departments of South, Grand’Anse, South-East, Nippes, West, Artibonite, and NorthWest were among the most affected. Road infrastructure sustained severe damage, particularly in Grand’Anse, where several communal sections remain isolated, hampering humanitarian access. The Ministry of Public Works continues debris clearance and repair operations to reopen key routes and facilitate aid delivery.</p>\n<p>On the health front, hospitals largely withstood the hurricane, though minor flooding was reported at Les Cayes Hospital and limited damage in Jérémie and Port-de-Paix.</p>\n",
+      "source": [
+        "UN Office for the Coordination of Humanitarian Affairs"
+      ],
+      "files": [
+        {
+          "filename": "4186573_Flash_update_Melissa_number_5_English.pdf",
+          "path": "./reliefweb_data/Hurricane_Melissa_hti_20260212_132549/pdfs/4186573_Flash_update_Melissa_number_5_English.pdf",
+          "url": "https://reliefweb.int/attachments/4cff0b89-cb3f-4953-9901-c436cee1222f/Flash_update_Melissa_number_5_English.pdf",
+          "size": 291604
+        }
+      ]
+    },
+    {
+      "reliefweb_id": "4185497",
+      "title": "WFP Haiti Situation Report #1 Hurricane Melissa, 04 November 2025",
+      "date": {
+        "original": "2025-11-04T00:00:00+00:00",
+        "changed": "2025-11-07T12:08:40+00:00",
+        "created": "2025-11-06T09:12:47+00:00"
+      },
+      "url": "https://reliefweb.int/report/haiti/wfp-haiti-situation-report-1-hurricane-melissa-04-november-2025",
+      "body_text": "<p><strong>In Numbers</strong></p>\n<ul>\n<li>\n<p>1,250,000 people affected</p>\n</li>\n<li>\n<p>360.000 people in need of food assistance</p>\n</li>\n<li>\n<p>115,000 targeted by Government</p>\n</li>\n<li>\n<p>190,000 people targeted by WFP</p>\n</li>\n</ul>\n<p><strong>Highlights</strong></p>\n<p>Hurricane Melissa devastated southern Haiti, resulting in casualties, displacements, damaging infrastructure, disrupting markets and road access.</p>\n<p>With the Government declaring a 3-month state of emergency, WFP is coordinating its response via food assistance, reinforced air service and logistics support.</p>\n",
+      "source": [
+        "World Food Programme"
+      ],
+      "files": [
+        {
+          "filename": "4185497_WFPHaitiSituationReport1_HurricaneMelissa_4Nov2025_final.pdf",
+          "path": "./reliefweb_data/Hurricane_Melissa_hti_20260212_132549/pdfs/4185497_WFPHaitiSituationReport1_HurricaneMelissa_4Nov2025_final.pdf",
+          "url": "https://reliefweb.int/attachments/32261c6a-5e95-4259-aa77-8c52b63af8dc/WFP%20Haiti%20Situation%20Report%20%231_Hurricane%20Melissa_4Nov2025_final.pdf",
+          "size": 402887
+        }
+      ]
+    },
+    {
+      "reliefweb_id": "4185255",
+      "title": "Haiti: Cholera Resurgence Threatens Vulnerable Communities",
+      "date": {
+        "original": "2025-11-05T00:00:00+00:00",
+        "changed": "2025-11-05T08:37:15+00:00",
+        "created": "2025-11-05T08:36:20+00:00"
+      },
+      "url": "https://reliefweb.int/report/haiti/haiti-cholera-resurgence-threatens-vulnerable-communities",
+      "body_text": "<p><em><strong>Authorities, Partners Should Prioritize Water, Sanitation, and Health Systems</strong></em></p>\n<p>(Washington, DC) – A resurgence of cholera in <a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://www.hrw.org/americas/haiti\">Haiti</a>’s West department underscores the urgent need for coordinated, long-term action to restore basic water and sanitation systems, Human Rights Watch said today. The outbreak, part of a seasonal surge during the rainy period, is spreading in and around Port-au-Prince and its metropolitan area amid the near collapse of the capital’s health infrastructure and worsening insecurity.</p>\n<p>Between January 1 and October 30, 2025, Haitian health authorities recorded 2,852 suspected cholera cases, 186 confirmed cases, and 48 deaths. Over a third of suspected cases are in children under 9, according to government data. After <a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://www.unocha.org/news/todays-top-news-occupied-palestinian-territory-sudan-democratic-republic-congo-haiti-0\">an 11-week period</a> during which no new cases were reported, public health authorities are now seeing a resurgence of cholera.</p>\n<p>“Cholera is once again threatening thousands of lives in Haiti because people lack access to the most basic services: clean water, sanitation, and medical care,” said <a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://www.hrw.org/about/people/nathalye-cotrino\">Nathalye Cotrino</a>, senior Americas researcher at Human Rights Watch. “Haitians need serious government and international efforts to address the outbreak and avoid more preventable deaths.”</p>\n<p>After over three years with <a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://www.hrw.org/news/2022/10/18/haiti-urgently-address-cholera-outbreak\">no confirmed cholera cases</a>, <a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://www.cdc.gov/mmwr/volumes/72/wr/pdfs/mm7202a1-h.pdf\">infections reappeared</a> in the country at the end of September 2022. The resurgence marks a painful continuation of the country’s struggle with cholera.</p>\n<p>In 2010, Haiti’s <a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://www.sciencedirect.com/science/article/pii/S1198743X14641343#:~:text=Cholera%20appeared%20in%20Haiti%20in%20October%202010%20for%20the%20first%20time%20in%20recorded%20history\">first</a> cholera outbreak <a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://press.un.org/en/2016/sgsm18323.doc.htm\">was traced back</a> to sewage negligently released from a United Nations peacekeeping base into a river. It caused about 9,800 deaths and over 820,000 infections. In 2016, the UN <a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://press.un.org/en/2016/sgsm18323.doc.htm\">acknowledged</a> its role in causing the epidemic and accepted a moral, but not legal, responsibility to address it. Today, persistent gaps in sanitation, clean water access, and emergency preparedness continue to leave the population dangerously exposed to renewed outbreaks.</p>\n<p>“Stagnant water, broken sewage lines, and the accumulation of trash across the city create ideal conditions for outbreaks to spread whenever the rains come,” Diana Manilla Arroyo, Head of Mission for <a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://www.msf.org/\">Médecins Sans Frontières</a> (MSF) Holland in Haiti, told Human Rights Watch. “On top of that, a lot of the country’s infrastructure was destroyed in the 2010 earthquake.”</p>\n<p>Lack of access to clean water, poor sanitation, and inadequate hygiene are <a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://www.cdc.gov/cholera/causes/index.html\">major contributors</a> to the spread of cholera. In Haiti, only 25 per cent of households have access to adequate handwashing facilities with soap, and 70 percent of people do not have access to an improved sanitation system, <a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://www.unicef.org/haiti/en/water-sanitation-and-hygiene-wash\">according to the UN</a>. Heavy rain from <a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://www.paho.org/en/hurricane-melissa\">Hurricane Melissa</a> also risks spreading the bacteria to more non-chlorinated water sources.</p>\n<p>The resurgence of cholera is exacerbated by extreme insecurity. Criminal groups have <a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://www.hrw.org/news/2025/04/17/haiti-escalating-violence-puts-population-grave-risk\">expanded</a> their control across much of the country, blocking roads, restricting humanitarian access, and isolating communities in need. Violence <a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://www.iom.int/news/displacement-haiti-reaches-record-high-14-million-people-flee-violence\">has displaced</a> over 1.4 million people this year, the highest number ever recorded in Haiti, forcing many into overcrowded informal settlements with little or no access to clean water or sanitation. These conditions put displaced people at serious risk.</p>\n<p>For those who fall ill, accessing health care is difficult. Only 11 percent of health facilities with inpatient capacity in the capital remain fully operational, <a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://www.unocha.org/news/todays-top-news-occupied-palestinian-territory-sudan-democratic-republic-congo-haiti-0#:~:text=This%20outbreak%20is%20unfolding%20amid%20a%20severe%20deterioration%20of%20basic%20services%20in%20the%20capital%2C%20where%20only%2011%20per%20cent%20of%20health%20facilities%20with%20inpatient%20capacity%20remain%20fully%20operational.\">according to the UN</a>. While people in more affluent and safer neighborhoods can reach private hospitals and treatment centers, those in areas controlled by criminal groups, such as Cité Soleil and lower Delmas, face severe movement restrictions, and do not have the means to pay for private health care.</p>\n<p>The latest outbreak <a href=\"https://reliefweb.int/report/haiti/haiti-cholera-outbreak-dg-echo-dg-echo-partners-paho-unicef-ministry-public-health-and-population-echo-daily-flash-2-october-2025\">has reached</a> Pétion-Ville, a more affluent neighborhood of Port-au-Prince where most UN and diplomatic offices are located, which had largely avoided significant cholera transmission in recent years.</p>\n<p>With assistance from the Pan American Health Organization and other humanitarian partners, Haiti’s Ministry of Health <a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://www.unocha.org/news/todays-top-news-occupied-palestinian-territory-sudan-democratic-republic-congo-haiti-0#:~:text=Haiti%E2%80%99s%20Ministry%20of%20Health%20%E2%80%93%20with%20support%20from%20the%20Pan%20American%20Health%20Organization%20and%20humanitarian%20partners%20%E2%80%93%20has%20stepped%20up%20disinfection%20campaigns%2C%20community%20awareness%20activities%2C%20and%20the%20distribution%20of%20chlorine%2C%20safe%20water%20and%20hygiene%20kits%20in%20the%20most%20affected%20neighborhoods.\">has intensified</a> efforts in the hardest-hit areas, including disinfection drives, public awareness initiatives, and the provision of chlorine, safe water, and hygiene supplies.</p>\n<p>Haiti’s transitional government, with support from international partners, should urgently repair the national water and sewage network, guarantee safe humanitarian access to high-risk areas, and restore the operational capacity of public health institutions, Human Rights Watch said. Efforts to chlorinate water sources and conduct public awareness campaigns on cholera prevention and the use of chlorinated water are also crucial, especially during high-risk seasons.</p>\n<p>Despite the worsening humanitarian and security conditions, several countries continue to return people to Haiti in large numbers, notably the Dominican Republic, the United States, and the Bahamas, as well as the British overseas territory of Turks and Caicos. These and other countries deported over 225,000 people to Haiti between January and the end of October 2025, according to the International Organization for Migration.</p>\n<p>People should not be deported or otherwise returned to Haiti, where overlapping humanitarian, security, and public health crises endanger lives, and where they face a high risk of violence with no effective access to protection or justice, Human Rights Watch said.</p>\n<p>“This cholera outbreak is being fueled by years of institutional neglect and the near collapse of essential services,” said Cotrino. “Foreign governments should be doing all they can to help Haiti put an end to cholera.”</p>\n",
+      "source": [
+        "Human Rights Watch"
+      ],
+      "files": []
+    },
+    {
+      "reliefweb_id": "4184659",
+      "title": "Haiti - Seasonal Monitor: Hurricane Melissa Impacts Haiti (October 31, 2025)",
+      "date": {
+        "original": "2025-10-31T00:00:00+00:00",
+        "changed": "2025-11-03T03:25:44+00:00",
+        "created": "2025-11-03T01:22:43+00:00"
+      },
+      "url": "https://reliefweb.int/report/haiti/haiti-seasonal-monitor-hurricane-melissa-impacts-haiti-october-31-2025",
+      "body_text": "<p><strong>Hurricane Melissa Impacts Haiti</strong></p>\n<p>Key Messages</p>\n<ul>\n<li>Above-average rainfall was reported in Haiti, before the passage of Hurricane Melissa.</li>\n<li>Forecasts for the next seven days suggest average to below-average rainfall.</li>\n</ul>\n<p><strong>Hurricane Melissa impacts Haiti</strong></p>\n<p>Melissa unleashed catastrophic flooding in Haiti, according to Haiti's Civil Protection Agency. Hurricane Melissa killed at least 20 people in Petit-Goâve, including 10 children, and damaged more than 160 homes, while 80 others were completely destroyed.</p>\n<p>Figure 1 shows above-average rainfall reported prior to the impact of Hurricane Melissa across the country. These wet conditions combined with the additional rainfall during the Hurricane resulted in flooding that has affected several municipalities, including Corail (whose city center was submerged) and Anse-d’Hainault and the Cayemites Islands (affected by coastal flooding). Dozens of makeshift dwellings in Beaumont and Pestel were damaged. Ten of eleven municipalities in Nippes experienced flooding and material damage.</p>\n<p>Officials reported that 152 persons with disabilities in Haiti's southern region required emergency food assistance. More than 11,600 people remained sheltered in Haiti because of the storm. There are currently 121 active shelters. More than 13,900 people have taken refuge in shelters, according to the National Emergency Operations Center (COUN).</p>\n<p>Grand'Anse: 7,184 people are in open shelters, excluding those in Dame-Marie, where two shelters are operational. Nippes: 283 people are in open shelters, primarily evacuated due to flood and landslide risks. South: 1,813 families (6,419 people) are in 56 shelters across 15 communes.</p>\n<p>Agricultural Sector (Provisional): Banana plantations were destroyed, while pigeon pea, yam crops, and fruit trees were severely damaged. In the South, banana plantations, fruit trees, and other crops suffered considerable damage. Livestock was swept away.</p>\n<p>Figure 2 indicates that average rainfall is forecast over the next seven days across central to northern parts of the country. However, given recent extreme rainfall amounts, any additional rainfall could increase the risk of floods, landslides, and additional damage for crop production areas. Below-average rainfall is forecast over the southern part of the country which may help alleviate flooding and enable recovery activities.</p>\n",
+      "source": [
+        "Famine Early Warning System Network"
+      ],
+      "files": [
+        {
+          "filename": "4184659_ht-sm-2025-10-31-m1762132745.pdf",
+          "path": "./reliefweb_data/Hurricane_Melissa_hti_20260212_132549/pdfs/4184659_ht-sm-2025-10-31-m1762132745.pdf",
+          "url": "https://reliefweb.int/attachments/f6d56437-8dc8-44f3-a1d4-b9e10c7be105/ht-sm-2025-10-31-m1762132745.pdf",
+          "size": 360449
+        }
+      ]
+    },
+    {
+      "reliefweb_id": "4184457",
+      "title": "Haiti: Hurricane Melissa - PAHO Situation Report # 4 (10/30/2025)",
+      "date": {
+        "original": "2025-10-31T00:00:00+00:00",
+        "changed": "2025-10-31T14:15:55+00:00",
+        "created": "2025-10-31T13:03:07+00:00"
+      },
+      "url": "https://reliefweb.int/report/haiti/haiti-hurricane-melissa-paho-situation-report-4-10302025",
+      "body_text": "<p><strong>HIGHLIGHTS</strong></p>\n<p>• Although heavy rains have stopped ,flooded rivers and rain continue to affect some localities.</p>\n<p>• Amongst the most affected, are displaced populations, with several sites and temporary shelters flooded and with inadequate WaSH conditions.</p>\n<p>• TheGeneral Directorate for Civil Protection (DGPC) has lowered the alert in the country to yellow in the Southern departments, and to green inthe rest of the country, including the Ouest department.</p>\n",
+      "source": [
+        "Pan American Health Organization"
+      ],
+      "files": [
+        {
+          "filename": "4184457_sitrep4-paho-hurricane-melissa-haiti-oct30-2025.pdf",
+          "path": "./reliefweb_data/Hurricane_Melissa_hti_20260212_132549/pdfs/4184457_sitrep4-paho-hurricane-melissa-haiti-oct30-2025.pdf",
+          "url": "https://reliefweb.int/attachments/31187ca3-9a19-5aa2-a226-7069dcaa5a77/sitrep4-paho-hurricane-melissa-haiti-oct30-2025.pdf",
+          "size": 717491
+        }
+      ]
+    },
+    {
+      "reliefweb_id": "4184083",
+      "title": "Haiti: Hurricane Melissa - PAHO Situation Report # 3 (10/29/2025)",
+      "date": {
+        "original": "2025-10-29T00:00:00+00:00",
+        "changed": "2025-10-30T01:08:58+00:00",
+        "created": "2025-10-29T23:33:04+00:00"
+      },
+      "url": "https://reliefweb.int/report/haiti/haiti-hurricane-melissa-paho-situation-report-3-10292025",
+      "body_text": "<p>HIGHLIGHTS</p>\n<ul>\n<li>After heavy rains during the night of 28 October and all day the October 29, several flooded rivers have been reported, including Digue river in Petit-Goave (Ouest department) that caused 12 deaths (including 9 children) and 20 people wounded (one of them with multiple trauma).</li>\n<li>7 IDP sites in Leogane housing at least 1000 people are flooded.</li>\n<li>4 health facilities in Leogane are reported to be flooded.</li>\n<li>A flooded river has also caused heavy damage to the road entering Jacmel, in the Sud-Est department which might cause further delays to aid delivery.</li>\n</ul>\n",
+      "source": [
+        "Pan American Health Organization"
+      ],
+      "files": [
+        {
+          "filename": "4184083_sitrep3-paho-hurricane-melissa-jamaica-oct29-2025.pdf",
+          "path": "./reliefweb_data/Hurricane_Melissa_hti_20260212_132549/pdfs/4184083_sitrep3-paho-hurricane-melissa-jamaica-oct29-2025.pdf",
+          "url": "https://reliefweb.int/attachments/2d76356d-b2d0-52de-8d07-0ae1d5ab7abe/sitrep3-paho-hurricane-melissa-jamaica-oct29-2025.pdf",
+          "size": 282246
+        }
+      ]
+    },
+    {
+      "reliefweb_id": "4184052",
+      "title": "Haiti: Tropical Storm Melissa - Flash Update No.3 (as of 28 October 2025)",
+      "date": {
+        "original": "2025-10-29T00:00:00+00:00",
+        "changed": "2025-10-30T03:55:57+00:00",
+        "created": "2025-10-29T17:05:05+00:00"
+      },
+      "url": "https://reliefweb.int/report/haiti/haiti-tropical-storm-melissa-flash-update-no3-28-october-2025",
+      "body_text": "<p><em>This report is produced with the support of the United Nations Office for the Coordination of Humanitarian Affairs (OCHA), in collaboration with humanitarian partners and based on available information.</em></p>\n<p><strong>HIGHLIGHTS</strong></p>\n<ul>\n<li>The National Oceanic and Atmospheric Administration (NOAA) has now classified Melissa as a Category 5 hurricane as of 27 October.</li>\n<li>On 27 October, the Artibonite and North-West departments were placed under orange alert, and the Artibonite Departmental Emergency Operations Centre (COUD) was activated on 28 October.</li>\n<li>The Nippes department was placed under red alert on 28 October.</li>\n<li>The World Food Programme (WFP) has pre-positioned 452 metric tons of food in the Grand Sud, with an additional 360 tons available from Port-au-Prince—enough to assist around 86,000 people for two weeks.</li>\n<li>The International Organization for Migration (IOM) supported the preventive sheltering of 3,000 people in the South and Grand ‘Anse, through the activation of 100 shelters and 253 Civil Protection brigadiers.</li>\n<li>The United Nations Children’s Fund (UNICEF) has pre-positioned 2,900 water, hygiene and sanitation kits for 14,500 people, and provided nutrition supplies to 176 health facilities covering 4,175 children across the Grand Sud.</li>\n<li>The United Nations Population Fund (UNFPA) pre-positioned sexual and reproductive health kits covering 4,200 births, 180 cases of rape, 525 obstetric surgeries and 240 post-abortion complications, and plans to distribute 4,000 dignity kits in the coming days.</li>\n</ul>\n<p><strong>SITUATION OVERVIEW</strong></p>\n<p>The National Oceanic and Atmospheric Administration has upgraded Melissa to a Category 5 hurricane, the highest level, with extremely strong winds capable of causing major damage. Although the system remains intense, Haiti is under a tropical storm alert, as the hurricane’s core is not expected to make direct landfall on the country.</p>\n<p>On 25 October, the Government adjusted alert levels: the South and Grand ‘Anse departments were placed under red alert, Nippes and the South-East under orange cyclonic alert, and the West under orange alert for heavy rains. The National Emergency Operations Centre remains fully activated.</p>\n<p>As of the morning of 27 October, Melissa was located south of Jamaica, moving gradually northward, potentially approaching Haiti in the following hours. The Artibonite and North-West departments are now under orange alert, due to expected worsening weather conditions.</p>\n<p>Peripheral rain bands continue to bring heavy rainfall, strong winds and rough seas, mainly over the southern peninsula and parts of the West. The Grand ‘Anse department is at high risk of renewed strong winds by Tuesday morning.</p>\n<p>According to the Civil Protection Directorate, since the start of the episode, three deaths and 16 injuries have been reported. Nearly 450 houses were flooded and 10 houses damaged, mainly in the North-West. Road access remains cut in Moron (Grand ‘Anse), Baie d’Orange and Marigot (South-East), as well as Lascahobas (Centre).</p>\n<p>The Food and Agriculture Organization (FAO) reports damage to agricultural livelihoods in the South, Grand ‘Anse and South-East departments, including the loss of banana, avocado, maize, bean and pigeon pea crops, livestock losses in the South-East, and the destruction of fishing gear. Fishing activities remain suspended.</p>\n",
+      "source": [
+        "UN Office for the Coordination of Humanitarian Affairs"
+      ],
+      "files": [
+        {
+          "filename": "4184052_Flash_update_Melissa_number_3_English_version_29_0ctober_2025.pdf",
+          "path": "./reliefweb_data/Hurricane_Melissa_hti_20260212_132549/pdfs/4184052_Flash_update_Melissa_number_3_English_version_29_0ctober_2025.pdf",
+          "url": "https://reliefweb.int/attachments/f3375924-0b55-43cc-9566-ad44450cb18d/Flash_update_Melissa_number_3_English_version_29_0ctober_2025.pdf",
+          "size": 244904
+        }
+      ]
+    },
+    {
+      "reliefweb_id": "4184020",
+      "title": "Haiti: Hurricane Melissa - PAHO Situation Report # 2 (10/28/2025)",
+      "date": {
+        "original": "2025-10-29T00:00:00+00:00",
+        "changed": "2026-01-07T06:28:30+00:00",
+        "created": "2025-10-29T14:03:06+00:00"
+      },
+      "url": "https://reliefweb.int/report/haiti/haiti-hurricane-melissa-paho-situation-report-2-10282025",
+      "body_text": "<p>HIGHLIGHTS</p>\n<p>• The crisis cell of the Ministry of Public Health and Population (MSPP) has been activated. The General Directorate of Civil Protection (DGPC) has added an orange alert for the Artibonite and Nord-Ouest department. The Southern departments and the Ouest remain in red alert.</p>\n<p>The Transitional Presidential Council has announced schools, and the commercial sector will remain closed tomorrow, Wednesday 29 October, to limit the impacts of the storm on the population.</p>\n<p>• Some flooding and flooded rivers have been reported in the Nippes and Sud departments, but they have not affected health facilities.</p>\n",
+      "source": [
+        "Pan American Health Organization"
+      ],
+      "files": [
+        {
+          "filename": "4184020_sitrep2-paho-hurricane-melissa-haiti-28oct-2025.pdf",
+          "path": "./reliefweb_data/Hurricane_Melissa_hti_20260212_132549/pdfs/4184020_sitrep2-paho-hurricane-melissa-haiti-28oct-2025.pdf",
+          "url": "https://reliefweb.int/attachments/53a2375f-e139-5cd2-845b-b3ad7911a559/sitrep2-paho-hurricane-melissa-haiti-28oct-2025.pdf",
+          "size": 331241
+        }
+      ]
+    },
+    {
+      "reliefweb_id": "4183824",
+      "title": "Haiti: Hurricane Melissa - PAHO Situation Report # 1 (10/26/2025)",
+      "date": {
+        "original": "2025-10-28T00:00:00+00:00",
+        "changed": "2025-10-28T23:39:07+00:00",
+        "created": "2025-10-28T17:33:11+00:00"
+      },
+      "url": "https://reliefweb.int/report/haiti/haiti-hurricane-melissa-paho-situation-report-1-10262025",
+      "body_text": "<p><strong>HIGHLIGHTS</strong></p>\n<p>• The crisis cell of the Ministry of Public Health and Population (MSPP) has been activated. The health directorates of the Grand-Sud departments (Sud-Est, Sud, Nippes, and Grand’Anse) and the Ouest are on alert, with Sud and Grand’ Anse on high alert.</p>\n<p>• At least 3 dead, one in Sud-Est (fallen tree), 2 in Port-au-Prince (Fontamara commune, landslide).</p>\n<p><strong>GENERAL SITUATION</strong></p>\n<p>• No major damage has been reported so far in health facilities. However, in the Nord-Ouest Department, pediatric and maternity services have been partially affected by the rain due to water leaks caused by roofing issues. Actions are underway to temporarily relocate these services within other hospital areas to ensure continuity of care.</p>\n<p>• Additionally, flooding has already begun in the courtyard of the Immaculée Conception Hospital (HIC) in Les Cayes (Sud Department) and surrounding roads due to inadequate drainage of the evacuation canals. The medical director has already taken preventive measures, including relocating certain patients — likely to the nursing school — and discharging stable patients early to minimize risks should the situation worsen. The hospital is facing power outages; however we are unable to provide fuel at the moment.</p>\n",
+      "source": [
+        "Pan American Health Organization"
+      ],
+      "files": [
+        {
+          "filename": "4183824_sitrep1-paho-hurricane-melissa-haiti-26oct-2025.pdf",
+          "path": "./reliefweb_data/Hurricane_Melissa_hti_20260212_132549/pdfs/4183824_sitrep1-paho-hurricane-melissa-haiti-26oct-2025.pdf",
+          "url": "https://reliefweb.int/attachments/28596787-cc70-57e2-969a-c880e496e9b1/sitrep1-paho-hurricane-melissa-haiti-26oct-2025.pdf",
+          "size": 387527
+        }
+      ]
+    },
+    {
+      "reliefweb_id": "4183713",
+      "title": "World Vision Haiti Mobilizes Emergency Response as Hurricane Melissa Intensifies",
+      "date": {
+        "original": "2025-10-28T00:00:00+00:00",
+        "changed": "2025-10-28T10:17:23+00:00",
+        "created": "2025-10-28T10:17:23+00:00"
+      },
+      "url": "https://reliefweb.int/report/haiti/world-vision-haiti-mobilizes-emergency-response-hurricane-melissa-intensifies",
+      "body_text": "<p>Port-au-Prince, Haiti – 27 October 2025 – As Hurricane Melissa strengthens and has become a major category 5 hurricane, World Vision Haiti is rapidly scaling up its emergency response to protect vulnerable children and families across the affected departments of Haiti.</p>\n<p>On 25 October, the Government of Haiti raised the alert level to red for Grand’Anse and Sud, the highest level of warning. South-East, Nippes, and West departments remain on orange alert, with authorities urging communities to follow official guidance and avoid high-risk areas.</p>\n<p>In the South, 124 households living in precarious areas in Les Cayes, Île-à-Vache, and Coteaux began relocating to emergency shelters on 24 October. Schools across the Grand South have suspended classes due to severe weather and their use as temporary shelters.</p>\n<p>According to the US National Hurricane Center (NHC), unstable weather conditions are expected to persist, with intense rainfall, flooding, and landslides likely in coastal and mountainous areas. Already, three fatalities and one serious injury have been reported following a landslide in Fontamara, Port-au-Prince. Rivers have overflowed in multiple departments, damaging homes, roads, and critical infrastructure.</p>\n<p>Agricultural livelihoods are under severe threat. Heavy rains and strong winds have damaged crops, obstructed access to farmland and markets, and disrupted fishing activities along the southern coast. In Mapou (South-East), 15 hectares of maize have been lost. These impacts jeopardize the upcoming winter agricultural season and risk deepening food insecurity.</p>\n<p>According to the October 2025 IPC analysis, over 1.4 million people in the affected departments are already in Crisis (IPC Phase 3), with 350,000 in Emergency (IPC Phase 4). Without urgent intervention, the storm could push more families into deeper vulnerability.</p>\n<p>World Vision Haiti has activated its Incident Management Team (IMT) at both national and regional levels and is coordinating closely with the Directorate of Civil Protection (DGPC) and humanitarian partners. Prepositioned relief supplies are ready to support 3,000 households, including hygiene kits, kitchen sets, and shelter materials. Rapid response teams are on standby to deploy as conditions allow.</p>\n<p>To meet immediate needs, World Vision Haiti has allocated USD 300,000 from its National Emergency Preparedness and Response Fund (NEPRF). The organization is actively engaging with the Partnership and donors to secure flexible, timely funding to scale up its response. Fundraising appeals will be finalized following rapid needs assessments and ongoing coordination with national authorities.</p>\n<p>“Children and families in Haiti are facing compounding crises,” said Lesly Michaud, Country Program Director. “We are committed to standing with communities through this storm and beyond, ensuring they receive the support they need to recover and rebuild.”</p>\n<p>World Vision Haiti continues to monitor the situation closely and remains focused on protecting the most vulnerable, restoring livelihoods, and supporting long-term resilience.</p>\n",
+      "source": [
+        "World Vision"
+      ],
+      "files": []
+    },
+    {
+      "reliefweb_id": "4183641",
+      "title": "UNICEF Haiti Flash Update No. 2 (Tropical Storm MELISSA) - 22-27 October 2025",
+      "date": {
+        "original": "2025-10-27T00:00:00+00:00",
+        "changed": "2025-10-28T03:09:10+00:00",
+        "created": "2025-10-28T03:05:03+00:00"
+      },
+      "url": "https://reliefweb.int/report/haiti/unicef-haiti-flash-update-no-2-tropical-storm-melissa-22-27-october-2025",
+      "body_text": "<p><strong>Highlights</strong></p>\n<ul>\n<li>Tropical Storm Melissa has intensified into a Category 5 hurricane, moving slowly westward near Haiti’s southern peninsula at around 6 km/h. The storm is expected to bring 200 to 400 mm of rain, strong winds, and life-threatening flash floods, landslides, and mudslides on Monday 27 and Tuesday 28 October.</li>\n<li>The Directorate General of Civil Protection (DGPC) has issued a red alert for the South and Grand’Anse departments, with orange alerts in effect for the West, Nippes, Artibonite, and North-West, and a yellow alert for the South-East.</li>\n<li>UNICEF is implementing anticipatory actions and has prepositioned life-saving supplies to support children and families, working in close coordination with national authorities and partners in the most at-risk areas.</li>\n</ul>\n<p><strong>Situation Update</strong></p>\n<p>The National Oceanic and Atmospheric Administration (NOAA) has upgraded Hurricane Melissa to a Category 5 system, the highest classification, with extremely powerful winds capable of causing severe destruction. While the hurricane continues to be highly intense, Haiti remains under a tropical storm watch, as current forecasts indicate the eye of the storm will not make direct landfall on the country.</p>\n<p>On 25 October, the Haitian authorities revised the national alert levels: the South and Grand’Anse departments were moved to red alert, Nippes and the South-East to orange cyclonic alert, and the West placed under orange alert for heavy rainfall. The National Emergency Operations Centre remains fully mobilized to coordinate preparedness and response actions.</p>\n<p>By the morning of 27 October, Melissa was tracking northward from south of Jamaica, following a path that could bring it closer to Haiti in the coming hours. In anticipation of worsening conditions, the Artibonite and North-West departments were also placed under orange alert.</p>\n<p>The outer bands of the hurricane are already producing torrential rains, strong winds, and dangerous sea conditions, particularly along the Southern Peninsula and parts of the West. Forecasts suggest Grand’Anse may again experience sustained winds as early as Tuesday morning.</p>\n<p>According to the DGPC, three fatalities and sixteen injuries have been reported so far. Around 450 homes have been flooded and ten damaged, mostly in the North-West. Flooding has affected several communities in Artibonite and the North-West, while road access remains cut off in Moron (Grand’Anse), Baie d’Orange and Marigot (South-East), as well as Lascahobas (Centre).</p>\n<p>Twenty schools and high schools have been identified to serve as shelters for affected families. Nine of them are currently hosting 1,991 people in the communes of Les Cayes, Coteaux, Jean du Sud, Île-à-Vache, and Les Cayes, while 117 people have taken refuge in temporary shelters and community centers in Port-Salut and Île-à-Vache.</p>\n",
+      "source": [
+        "UN Children's Fund"
+      ],
+      "files": [
+        {
+          "filename": "4183641_UNICEFHaitiFlashReportNo.2TropicalStormMELISSA27October2025.pdf",
+          "path": "./reliefweb_data/Hurricane_Melissa_hti_20260212_132549/pdfs/4183641_UNICEFHaitiFlashReportNo.2TropicalStormMELISSA27October2025.pdf",
+          "url": "https://reliefweb.int/attachments/42878fb1-bc4c-4f13-98cd-ee5e637ee2c6/UNICEF%20Haiti%20Flash%20Report%20No.2%20%28Tropical%20Storm%20MELISSA%29%2027%20October%202025.pdf",
+          "size": 269576
+        }
+      ]
+    },
+    {
+      "reliefweb_id": "4183534",
+      "title": "Haiti: Tropical Storm Melissa, Grand-Sud | Situation Report, 26 October 2025",
+      "date": {
+        "original": "2025-10-27T00:00:00+00:00",
+        "changed": "2025-10-27T14:08:04+00:00",
+        "created": "2025-10-27T13:34:44+00:00"
+      },
+      "url": "https://reliefweb.int/report/haiti/haiti-tropical-storm-melissa-grand-sud-situation-report-26-october-2025",
+      "body_text": "<p>The thirteenth tropical storm of the season, named Melissa, is currently moving through the Caribbean Sea and expected to intensify rapidly into a major hurricane by Sunday, posing serious flood risks. Haitian authorities have placed the Sud and Grand-Anse departments under red alert, while Nippes, South-East, and West departments remain on amber alert. These mostly rural areas, whose populations depend primarily on agriculture, are already affected: persistent rains, strong winds, and adverse sea conditions have damaged crops and the environment, disrupted routes, increasing the risk of food insecurity. The table below presents early findings from field observations and information gathered from key informants for the period 21–25 October 2025.</p>\n",
+      "source": [
+        "Food and Agriculture Organization of the United Nations"
+      ],
+      "files": [
+        {
+          "filename": "4183534_FAO_Haiti-TropicalStormMelissa-Grand-Sud_SituationReport_26October2025.pdf",
+          "path": "./reliefweb_data/Hurricane_Melissa_hti_20260212_132549/pdfs/4183534_FAO_Haiti-TropicalStormMelissa-Grand-Sud_SituationReport_26October2025.pdf",
+          "url": "https://reliefweb.int/attachments/a0a81572-e4fb-4fb1-8f5c-ffa5920ef0ca/FAO_Haiti%20-%20Tropical%20Storm%20Melissa%20-%20Grand-Sud_Situation%20Report_26%20October%202025.pdf",
+          "size": 2430488
+        }
+      ]
+    },
+    {
+      "reliefweb_id": "4185679",
+      "title": "Hurricane Melissa Haiti and Jamaica Situation Report No. 1 (as of 5:00pm AST on 27th October 2025)",
+      "date": {
+        "original": "2025-10-27T00:00:00+00:00",
+        "changed": "2025-11-07T03:55:05+00:00",
+        "created": "2025-10-27T00:00:00+00:00"
+      },
+      "url": "https://reliefweb.int/report/haiti/hurricane-melissa-haiti-and-jamaica-situation-report-no-1-500pm-ast-27th-october-2025",
+      "body_text": "<p><strong>SITUATION OVERVIEW:</strong></p>\n<p>Hurricane Melissa formed on October 25, 2025, in the Caribbean Sea. The system initially affected Haiti as a tropical storm as early as October 23, resulting in flooding, landslides and several deaths. The system has strengthened into a Category 5 storm and was located near latitude 16.6 North, longitude 78.6 West at 8:00 p.m. AST, or 155 miles (245 km) southwest of Kingston Jamaica. Maximum sustained winds are near 155 mph (245 km/h) with higher wind gusts. Hurricane Melissa is tracking slowly westward at near 2 mph (4 km/h). Hurricane force winds extend 30 mi (45 km) from the centre and tropical storm force winds extend 195 mi (315 km), with a central pressure of 909 mb (26.85 in).</p>\n",
+      "source": [
+        "Caribbean Disaster Emergency Management Agency"
+      ],
+      "files": [
+        {
+          "filename": "4185679_SitRep01-Hurricane-Melissa20251027Final.pdf",
+          "path": "./reliefweb_data/Hurricane_Melissa_hti_20260212_132549/pdfs/4185679_SitRep01-Hurricane-Melissa20251027Final.pdf",
+          "url": "https://reliefweb.int/attachments/4e844e38-64df-4ae3-86ac-74fe5544e168/SitRep01-Hurricane-Melissa20251027Final.pdf",
+          "size": 1206206
+        }
+      ]
+    },
+    {
+      "reliefweb_id": "4183333",
+      "title": "Haiti: Tropical Storm Melissa - Flash Update No.2 (as of 25 October 2025)",
+      "date": {
+        "original": "2025-10-26T00:00:00+00:00",
+        "changed": "2025-10-27T04:01:15+00:00",
+        "created": "2025-10-26T20:23:35+00:00"
+      },
+      "url": "https://reliefweb.int/report/haiti/haiti-tropical-storm-melissa-flash-update-no2-25-october-2025",
+      "body_text": "<ul>\n<li>The departments of South and Grand ‘Anse have been placed under Red Alert (maximum level).</li>\n<li>The Hydrometeorological Unit of Haiti (UHM) maintains Orange Alert status for South-East, Nippes and West.</li>\n<li>Three deaths and one injury have been reported, and flooding has been recorded in several departments.</li>\n<li>The World Food Programme (WFP) has pre-positioned 450 MT of food and provided Anticipatory Action (AA) cash transfers to 9,500 households; IOM has pre-positioned 3,371 hygiene kits in the South; the Common Pipeline and partners have NFI kits and light shelters for 44,000 households; PAHO/WHO has medical kits for 11,100 people.</li>\n<li>The Food and Agriculture Organization (FAO) reports agricultural losses in South, Nippes, Grand’Anse and South-East, including 15 hectares of maize destroyed in Mapou (South-East), as well as damage to crops, livestock and fisheries.</li>\n<li>Authorities report population movements toward three emergency shelters in the South and the closure of schools across the four departments of the Grand South.</li>\n</ul>\n",
+      "source": [
+        "UN Office for the Coordination of Humanitarian Affairs"
+      ],
+      "files": [
+        {
+          "filename": "4183333_FlashupdateMelissanumber2Englishv2.pdf",
+          "path": "./reliefweb_data/Hurricane_Melissa_hti_20260212_132549/pdfs/4183333_FlashupdateMelissanumber2Englishv2.pdf",
+          "url": "https://reliefweb.int/attachments/5a4f8124-4a43-4e0b-81cd-3aa2c090b24b/Flash%20update%20Melissa%20%20number%202%20English%20v2.pdf",
+          "size": 441792
+        }
+      ]
+    },
+    {
+      "reliefweb_id": "4183331",
+      "title": "At least 1.6 million children at risk as Hurricane Melissa moves through the Caribbean",
+      "date": {
+        "original": "2025-10-26T00:00:00+00:00",
+        "changed": "2025-10-27T05:34:12+00:00",
+        "created": "2025-10-26T19:33:06+00:00"
+      },
+      "url": "https://reliefweb.int/report/haiti/least-16-million-children-risk-hurricane-melissa-moves-through-caribbean",
+      "body_text": "<p><em>UNICEF and partners have pre-positioned life-saving supplies and stand ready to provide support to the families in affected areas across the region</em></p>\n<p><strong>PANAMA CITY, 26 October 2025 -</strong> As Hurricane Melissa is moving slowly across the Caribbean Sea, the winds, torrential rains, and flash flooding have put at least 1.6 million children at risk, according to UNICEF estimates.</p>\n<p>Caribbean countries, including Jamaica, Haiti, Cuba, and the Dominican Republic, are expected to endure several days of intense weather that could disrupt basic services, especially in vulnerable coastal areas.</p>\n<p>“All efforts to prepare for the arrival of hurricane are vital to mitigate damage and loss of life in the most vulnerable communities, especially in regions like the Caribbean. Small islands always face heightened vulnerability to extreme climate events,” said Roberto Benes Regional Director for Latin America and the Caribbean. “UNICEF helps strengthen national capacities to anticipate and respond to climate-related emergencies, and to deliver essential services for children. This is fundamental to protecting those who need it most.”</p>\n<p>Over the past decade, approximately 11 million people, including nearly 4 million children, were directly affected each year by natural and human-made hazards in Latin America and the Caribbean.</p>\n<p>While extreme weather events put the lives of children and families at risk across the region, UNICEF, in coordination with national authorities and partners in each country, is supporting emergency preparedness efforts, including prepositioning essential supplies such as hygiene materials, water purifiers and containers medical supplies, sharing early warning messages with communities and providing cash to households at risk in the south of the Haiti to mitigate the impact of the hurricane.</p>\n<p>In 2025, UNICEF requested $19 million to prepare for emergencies in Latin America and the Caribbean and strengthen disaster preparedness for emergency response programmes across the region.</p>\n<p>#####</p>\n<p><strong>Media contacts</strong></p>\n<p><strong>Giacomo Colarullo</strong></p>\n<p>Communication Officer</p>\n<p>UNICEF</p>\n<p>Tel: +1 917 622 2782</p>\n<p>Email: <a href=\"mailto:gcolarullo@unicef.org\">gcolarullo@unicef.org</a></p>\n<p><strong>Sendai Carolina Zea</strong></p>\n<p>UNICEF Latin America and the Caribbean</p>\n<p>Tel: +507 6821 0843</p>\n<p>Email: <a href=\"mailto:sczea@unicef.org\">sczea@unicef.org</a></p>\n",
+      "source": [
+        "UN Children's Fund"
+      ],
+      "files": []
+    },
+    {
+      "reliefweb_id": "4183168",
+      "title": "UNICEF Haiti Flash Update No. 1 (Tropical Storm MELISSA), 22-24 October 2025",
+      "date": {
+        "original": "2025-10-24T00:00:00+00:00",
+        "changed": "2025-10-24T11:39:12+00:00",
+        "created": "2025-10-24T11:38:29+00:00"
+      },
+      "url": "https://reliefweb.int/report/haiti/unicef-haiti-flash-update-no-1-tropical-storm-melissa-22-24-october-2025",
+      "body_text": "<p><strong>Highlights</strong></p>\n<ul>\n<li>Tropical Storm Melissa is moving toward southwest Haiti and may strengthen into a major hurricane by the weekend, bringing <strong>200–300 mm of rain and severe flooding risks</strong>.</li>\n<li>The Directorate of Civil Protection (DPC) and humanitarian partners are fully mobilized; <strong>early impacts include flooding, landslides, and one fatality</strong>.</li>\n<li><strong>UNICEF has activated its emergency protocols and anticipatory action measures</strong>, with health, nutrition, and WASH supplies prepositioned and coordination ongoing to support affected families.</li>\n<li>UNICEF is working with partners and donors to provide cash support to 8,000 households, ensuring a unified response.</li>\n</ul>\n",
+      "source": [
+        "UN Children's Fund"
+      ],
+      "files": [
+        {
+          "filename": "4183168_UNICEFHaitiFlashUpdateNo.1TropicalStormMELISSA-22-24October2025.pdf",
+          "path": "./reliefweb_data/Hurricane_Melissa_hti_20260212_132549/pdfs/4183168_UNICEFHaitiFlashUpdateNo.1TropicalStormMELISSA-22-24October2025.pdf",
+          "url": "https://reliefweb.int/attachments/22fef358-1f24-47dd-89d7-5c3f9588964e/UNICEF%20Haiti%20Flash%20Update%20No.%201%20%28Tropical%20Storm%20MELISSA%29%20-%2022-24%20October%202025.pdf",
+          "size": 351879
+        }
+      ]
+    },
+    {
+      "reliefweb_id": "4183047",
+      "title": "Haiti: Tropical Storm Melissa - Flash Update No.1 (as of 23 October 2025)",
+      "date": {
+        "original": "2025-10-23T00:00:00+00:00",
+        "changed": "2025-10-24T01:33:19+00:00",
+        "created": "2025-10-24T01:07:13+00:00"
+      },
+      "url": "https://reliefweb.int/report/haiti/haiti-tropical-storm-melissa-flash-update-no1-23-october-2025",
+      "body_text": "<p><em>This report is produced with the support of the United Nations Office for the Coordination of Humanitarian Affairs (OCHA), in collaboration with humanitarian partners and based on available information.</em></p>\n<p><strong>HIGHLIGHTS</strong></p>\n<ul>\n<li>Tropical Storm Melissa continues to move slowly toward Haiti’s southern coast, according to the National Hurricane Center (NHC).</li>\n<li>On 22 October, the Civil Protection Directorate (DGPC) issued an orange alert for the departments of Ouest, Grand ’Anse, Nippes, Sud and Sud-Est.</li>\n<li>Sustained rainfall and strong winds are expected from Thursday evening, with potential flooding, landslides, and power outages in coastal and mountainous areas.</li>\n<li>The CERF Anticipatory Action Framework has been activated. A total of US$4 million has been allocated to WFP, UNICEF and IOM to enable the launch of early actions aimed at reducing the impact of the shock on vulnerable populations.</li>\n</ul>\n<p><strong>SITUATION OVERVIEW</strong></p>\n<p>As of 23 October at 9:00 a.m., <a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://www.nhc.noaa.gov/mobile/refresh/MIATCDAT3%2Bhtml/211445.html?utm_source=chatgpt.com\">the United States National Hurricane Center</a> reported that the center of Tropical Storm Melissa was located approximately 485 km southwest of Port-au-Prince. The storm is moving west-northwest at nearly 6 km/h, with tropical-storm-force winds extending up to 185 km from the center. Melissa is expected to strengthen into a major hurricane by the end of the weekend or early next week.</p>\n<p>The storm is forecast to bring heavy rainfall to parts of southern Haiti throughout the weekend and into next week, leading to significant and life-threatening flash floods, as well as multiple landslides. Strong winds could also affect the Tiburon Peninsula for a day or more.</p>\n<p>On 22 October, the Civil Protection Directorate (DGPC) issued an orange alert for the departments of Ouest, Grand’Anse, Nippes, Sud and Sud-Est, urging the population to remain vigilant due to the risks of heavy rainfall and strong winds. DGPC recommends that the population stay informed through official advisories, avoid high-risk areas (including ravines, riverbanks, coastal zones, flood-prone and landslideprone areas), refrain from crossing swollen rivers, secure roofs and loose objects, and prepare an emergency kit and shelter plan as needed.</p>\n",
+      "source": [
+        "UN Office for the Coordination of Humanitarian Affairs"
+      ],
+      "files": [
+        {
+          "filename": "4183047_Flashupdate1TSMelissaENG_20251023.pdf",
+          "path": "./reliefweb_data/Hurricane_Melissa_hti_20260212_132549/pdfs/4183047_Flashupdate1TSMelissaENG_20251023.pdf",
+          "url": "https://reliefweb.int/attachments/9b8e6df9-4b61-4556-b297-d46c85519dce/Flash%20update%20%231%20TS%20Melissa%20ENG_20251023.pdf",
+          "size": 283336
+        }
+      ]
+    }
+  ]
+}

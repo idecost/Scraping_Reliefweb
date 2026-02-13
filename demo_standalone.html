@@ -1,0 +1,1230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReliefWeb Document Fetcher - Demo</title>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 2rem 0;
+        }
+
+        /* Demo Container */
+        .demo-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .demo-header {
+            text-align: center;
+            color: white;
+            margin-bottom: 3rem;
+        }
+
+        .demo-header h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .demo-header p {
+            font-size: 1.25rem;
+            opacity: 0.95;
+        }
+
+        .demo-info {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        .demo-info h2 {
+            color: #2c5aa0;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .demo-info ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .demo-info li {
+            padding: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .demo-info li:before {
+            content: "\2713";
+            position: absolute;
+            left: 0;
+            color: #10b981;
+            font-weight: bold;
+        }
+
+        .status-indicator {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            font-weight: 600;
+            margin-top: 1rem;
+        }
+
+        .status-online {
+            background: #d1fae5;
+            color: #065f46;
+        }
+
+        .status-offline {
+            background: #fee2e2;
+            color: #991b1b;
+        }
+
+        /* Settings Panel */
+        .settings-panel {
+            background: white;
+            border-radius: 12px;
+            padding: 1.5rem 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        .settings-toggle {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .settings-toggle h2 {
+            color: #2c5aa0;
+            font-size: 1.2rem;
+        }
+
+        .settings-toggle .arrow {
+            font-size: 1.2rem;
+            transition: transform 0.3s ease;
+            color: #64748b;
+        }
+
+        .settings-toggle .arrow.open {
+            transform: rotate(180deg);
+        }
+
+        .settings-body {
+            display: none;
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        .settings-body.open {
+            display: block;
+        }
+
+        .settings-row {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .settings-row label {
+            font-weight: 600;
+            color: #1e293b;
+            font-size: 0.875rem;
+            min-width: 120px;
+        }
+
+        .settings-row input {
+            flex: 1;
+            min-width: 250px;
+            padding: 0.5rem 0.75rem;
+            border: 2px solid #e2e8f0;
+            border-radius: 6px;
+            font-size: 0.9rem;
+        }
+
+        .settings-row input:focus {
+            outline: none;
+            border-color: #2c5aa0;
+        }
+
+        .settings-row button {
+            padding: 0.5rem 1rem;
+            background: #2c5aa0;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 0.85rem;
+        }
+
+        .settings-row button:hover {
+            background: #234a85;
+        }
+
+        .settings-hint {
+            color: #64748b;
+            font-size: 0.8rem;
+            margin-top: 0.5rem;
+        }
+
+        /* ==== RELIEFWEB COMPONENT STYLES ==== */
+        .reliefweb-fetcher {
+            --relief-primary: #2c5aa0;
+            --relief-secondary: #e8734e;
+            --relief-success: #10b981;
+            --relief-error: #ef4444;
+            --relief-warning: #f59e0b;
+            --relief-bg: #ffffff;
+            --relief-surface: #f8fafc;
+            --relief-border: #e2e8f0;
+            --relief-text: #1e293b;
+            --relief-text-light: #64748b;
+
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .reliefweb-card {
+            background: var(--relief-bg);
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .reliefweb-header {
+            text-align: center;
+            margin-bottom: 2rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 2px solid var(--relief-border);
+        }
+
+        .reliefweb-header h1 {
+            color: var(--relief-primary);
+            font-size: 2rem;
+            font-weight: 700;
+            margin: 0 0 0.5rem 0;
+        }
+
+        .reliefweb-header p {
+            color: var(--relief-text-light);
+            font-size: 1rem;
+            margin: 0;
+        }
+
+        .reliefweb-form {
+            display: grid;
+            gap: 1.5rem;
+        }
+
+        .reliefweb-form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .reliefweb-label {
+            font-weight: 600;
+            color: var(--relief-text);
+            font-size: 0.875rem;
+            text-transform: uppercase;
+            letter-spacing: 0.025em;
+        }
+
+        .reliefweb-input,
+        .reliefweb-select {
+            padding: 0.75rem 1rem;
+            border: 2px solid var(--relief-border);
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: all 0.2s ease;
+            background: var(--relief-bg);
+            color: var(--relief-text);
+        }
+
+        .reliefweb-input:focus,
+        .reliefweb-select:focus {
+            outline: none;
+            border-color: var(--relief-primary);
+            box-shadow: 0 0 0 3px rgba(44, 90, 160, 0.1);
+        }
+
+        .reliefweb-button {
+            padding: 1rem 2rem;
+            background: var(--relief-primary);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            text-transform: uppercase;
+            letter-spacing: 0.025em;
+        }
+
+        .reliefweb-button:hover:not(:disabled) {
+            background: #234a85;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(44, 90, 160, 0.3);
+        }
+
+        .reliefweb-button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        .reliefweb-button-secondary {
+            background: var(--relief-secondary);
+        }
+
+        .reliefweb-button-secondary:hover:not(:disabled) {
+            background: #d46839;
+        }
+
+        .reliefweb-progress {
+            margin-top: 2rem;
+            display: none;
+        }
+
+        .reliefweb-progress.active {
+            display: block;
+        }
+
+        .reliefweb-progress-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+
+        .reliefweb-progress-status {
+            font-weight: 600;
+            color: var(--relief-text);
+        }
+
+        .reliefweb-progress-percent {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--relief-primary);
+        }
+
+        .reliefweb-progress-bar-container {
+            height: 12px;
+            background: var(--relief-surface);
+            border-radius: 6px;
+            overflow: hidden;
+            margin-bottom: 0.5rem;
+        }
+
+        .reliefweb-progress-bar {
+            height: 100%;
+            background: linear-gradient(90deg, var(--relief-primary), var(--relief-secondary));
+            border-radius: 6px;
+            transition: width 0.3s ease;
+            width: 0%;
+        }
+
+        .reliefweb-progress-message {
+            color: var(--relief-text-light);
+            font-size: 0.875rem;
+            text-align: center;
+        }
+
+        .reliefweb-results {
+            margin-top: 2rem;
+            display: none;
+        }
+
+        .reliefweb-results.active {
+            display: block;
+        }
+
+        .reliefweb-results-header {
+            background: linear-gradient(135deg, var(--relief-primary), var(--relief-secondary));
+            color: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+
+        .reliefweb-results-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin: 0 0 1rem 0;
+        }
+
+        .reliefweb-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+
+        .reliefweb-stat {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 1rem;
+            border-radius: 6px;
+            backdrop-filter: blur(10px);
+        }
+
+        .reliefweb-stat-value {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 0.25rem;
+        }
+
+        .reliefweb-stat-label {
+            font-size: 0.875rem;
+            opacity: 0.9;
+        }
+
+        .reliefweb-actions {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .reliefweb-alert {
+            padding: 1rem;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            display: none;
+        }
+
+        .reliefweb-alert.active {
+            display: block;
+        }
+
+        .reliefweb-alert-error {
+            background: #fee2e2;
+            border: 1px solid var(--relief-error);
+            color: #991b1b;
+        }
+
+        .reliefweb-alert-success {
+            background: #d1fae5;
+            border: 1px solid var(--relief-success);
+            color: #065f46;
+        }
+
+        .reliefweb-folder-input-wrapper {
+            position: relative;
+        }
+
+        .reliefweb-folder-input {
+            display: none;
+        }
+
+        .reliefweb-folder-display {
+            padding: 0.75rem 1rem;
+            border: 2px dashed var(--relief-border);
+            border-radius: 8px;
+            background: var(--relief-surface);
+            cursor: pointer;
+            transition: all 0.2s ease;
+            text-align: center;
+            color: var(--relief-text-light);
+        }
+
+        .reliefweb-folder-display:hover {
+            border-color: var(--relief-primary);
+            background: white;
+        }
+
+        .reliefweb-folder-display.has-folder {
+            border-style: solid;
+            border-color: var(--relief-success);
+            color: var(--relief-text);
+        }
+
+        @keyframes reliefweb-pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+
+        .reliefweb-loading {
+            animation: reliefweb-pulse 2s ease-in-out infinite;
+        }
+
+        /* ===== PDF PROCESSOR SECTION ===== */
+        .processor-card {
+            background: var(--relief-bg, #ffffff);
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .processor-header {
+            text-align: center;
+            margin-bottom: 2rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 2px solid #e2e8f0;
+        }
+
+        .processor-header h1 {
+            color: #7c3aed;
+            font-size: 2rem;
+            font-weight: 700;
+            margin: 0 0 0.5rem 0;
+        }
+
+        .processor-header p {
+            color: #64748b;
+            font-size: 1rem;
+            margin: 0;
+        }
+
+        .folder-list {
+            display: grid;
+            gap: 0.75rem;
+            margin: 1rem 0;
+        }
+
+        .folder-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem;
+            border: 2px solid #e2e8f0;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .folder-item:hover {
+            border-color: #7c3aed;
+            background: #f5f3ff;
+        }
+
+        .folder-item.selected {
+            border-color: #7c3aed;
+            background: #ede9fe;
+        }
+
+        .folder-item-info {
+            display: flex;
+            flex-direction: column;
+            gap: 0.25rem;
+        }
+
+        .folder-item-name {
+            font-weight: 600;
+            color: #1e293b;
+        }
+
+        .folder-item-details {
+            font-size: 0.8rem;
+            color: #64748b;
+        }
+
+        .folder-item-badge {
+            padding: 0.25rem 0.75rem;
+            border-radius: 999px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+
+        .badge-ready {
+            background: #d1fae5;
+            color: #065f46;
+        }
+
+        .badge-done {
+            background: #dbeafe;
+            color: #1e40af;
+        }
+
+        .processor-button {
+            padding: 1rem 2rem;
+            background: #7c3aed;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            text-transform: uppercase;
+            letter-spacing: 0.025em;
+            width: 100%;
+            margin-top: 1rem;
+        }
+
+        .processor-button:hover:not(:disabled) {
+            background: #6d28d9;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(124, 58, 237, 0.3);
+        }
+
+        .processor-button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        .processor-button-outline {
+            background: transparent;
+            color: #7c3aed;
+            border: 2px solid #7c3aed;
+        }
+
+        .processor-button-outline:hover:not(:disabled) {
+            background: #f5f3ff;
+            box-shadow: none;
+            transform: none;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .demo-header h1 {
+                font-size: 2rem;
+            }
+
+            .reliefweb-header h1 {
+                font-size: 1.5rem;
+            }
+
+            .reliefweb-card, .processor-card {
+                padding: 1.5rem;
+            }
+
+            .reliefweb-actions {
+                flex-direction: column;
+            }
+
+            .reliefweb-button {
+                width: 100%;
+            }
+
+            .settings-row {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .settings-row label {
+                min-width: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="demo-container">
+        <!-- Demo Header -->
+        <div class="demo-header">
+            <h1>&#127758; ReliefWeb Document Fetcher</h1>
+            <p>Download disaster reports and PDFs from the ReliefWeb API</p>
+        </div>
+
+        <!-- Server Settings Panel -->
+        <div class="settings-panel">
+            <div class="settings-toggle" onclick="toggleSettings()">
+                <h2>&#9881;&#65039; Server Settings</h2>
+                <span class="arrow" id="settingsArrow">&#9660;</span>
+            </div>
+            <div class="settings-body" id="settingsBody">
+                <div class="settings-row">
+                    <label for="apiUrlInput">API Base URL:</label>
+                    <input type="text" id="apiUrlInput" value="http://localhost:5000" placeholder="http://localhost:5000" />
+                    <button onclick="applyServerUrl()">Apply &amp; Reconnect</button>
+                </div>
+                <p class="settings-hint">
+                    Change this if your Flask backend runs on a different host or port.<br>
+                    For local use: <code>http://localhost:5000</code> &nbsp;|&nbsp;
+                    For remote: <code>https://your-server.com</code>
+                </p>
+            </div>
+        </div>
+
+        <!-- Instructions -->
+        <div class="demo-info">
+            <h2>How to Use This Demo</h2>
+            <ul>
+                <li>Make sure the Flask backend server is running (see Settings above)</li>
+                <li>Enter a disaster name (e.g., "Hurricane Melissa", "Earthquake", "Typhoon Haiyan")</li>
+                <li>Select a country from the dropdown</li>
+                <li>Optionally select an output folder (or use the default)</li>
+                <li>Click "Fetch Documents" and watch the progress</li>
+                <li>Download your ZIP file when complete!</li>
+            </ul>
+            <div id="serverStatus" class="status-indicator status-offline">
+                Checking server status...
+            </div>
+        </div>
+
+        <!-- ===== SECTION 1: Document Fetcher ===== -->
+        <div class="reliefweb-fetcher" id="reliefwebFetcher">
+            <div class="reliefweb-card">
+                <div class="reliefweb-header">
+                    <h1>&#128203; Document Fetcher</h1>
+                    <p>Search and download disaster-related documents</p>
+                </div>
+
+                <!-- Alert Messages -->
+                <div id="reliefwebAlert" class="reliefweb-alert">
+                    <span id="reliefwebAlertMessage"></span>
+                </div>
+
+                <!-- Form -->
+                <form id="reliefwebForm" class="reliefweb-form">
+                    <div class="reliefweb-form-group">
+                        <label class="reliefweb-label" for="disasterName">Disaster Name</label>
+                        <input 
+                            type="text" 
+                            id="disasterName" 
+                            class="reliefweb-input" 
+                            placeholder="e.g., Hurricane Melissa, Earthquake, Typhoon Haiyan"
+                            value="Hurricane Melissa"
+                            required
+                        />
+                    </div>
+
+                    <div class="reliefweb-form-group">
+                        <label class="reliefweb-label" for="countrySelect">Country</label>
+                        <select id="countrySelect" class="reliefweb-select" required>
+                            <option value="">Select a country...</option>
+                        </select>
+                    </div>
+
+                    <div class="reliefweb-form-group">
+                        <label class="reliefweb-label">Output Folder (Optional)</label>
+                        <div class="reliefweb-folder-input-wrapper">
+                            <input 
+                                type="file" 
+                                id="folderInput" 
+                                class="reliefweb-folder-input" 
+                                webkitdirectory 
+                                directory 
+                                multiple
+                            />
+                            <div id="folderDisplay" class="reliefweb-folder-display" onclick="document.getElementById('folderInput').click()">
+                                &#128193; Click to select output folder (or use default: ./reliefweb_data)
+                            </div>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="reliefweb-button">
+                        &#128640; Fetch Documents
+                    </button>
+                </form>
+
+                <!-- Progress Indicator -->
+                <div id="reliefwebProgress" class="reliefweb-progress">
+                    <div class="reliefweb-progress-header">
+                        <span class="reliefweb-progress-status" id="progressStatus">Initializing...</span>
+                        <span class="reliefweb-progress-percent" id="progressPercent">0%</span>
+                    </div>
+                    <div class="reliefweb-progress-bar-container">
+                        <div class="reliefweb-progress-bar" id="progressBar"></div>
+                    </div>
+                    <p class="reliefweb-progress-message" id="progressMessage">Starting download...</p>
+                </div>
+
+                <!-- Results -->
+                <div id="reliefwebResults" class="reliefweb-results">
+                    <div class="reliefweb-results-header">
+                        <h2 class="reliefweb-results-title">&#9989; Download Complete!</h2>
+                        <div class="reliefweb-stats">
+                            <div class="reliefweb-stat">
+                                <div class="reliefweb-stat-value" id="statReports">0</div>
+                                <div class="reliefweb-stat-label">Reports Found</div>
+                            </div>
+                            <div class="reliefweb-stat">
+                                <div class="reliefweb-stat-value" id="statPdfs">0</div>
+                                <div class="reliefweb-stat-label">PDFs Downloaded</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="reliefweb-actions">
+                        <button class="reliefweb-button reliefweb-button-secondary" id="downloadZipBtn">
+                            &#128230; Download ZIP File
+                        </button>
+                        <button class="reliefweb-button" id="newSearchBtn">
+                            &#128260; New Search
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ===== SECTION 2: PDF Text Processor ===== -->
+        <div class="reliefweb-fetcher">
+            <div class="processor-card">
+                <div class="processor-header">
+                    <h1>&#128196; PDF Text Processor</h1>
+                    <p>Extract full text from downloaded PDFs and generate a structured JSON</p>
+                </div>
+
+                <!-- Processor Alert -->
+                <div id="processorAlert" class="reliefweb-alert">
+                    <span id="processorAlertMessage"></span>
+                </div>
+
+                <!-- Folder List -->
+                <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:0.5rem;">
+                    <label class="reliefweb-label">Available Data Folders</label>
+                    <button class="processor-button-outline processor-button" style="width:auto; margin:0; padding:0.5rem 1rem; font-size:0.85rem;" onclick="loadFolders()">
+                        &#128260; Refresh Folders
+                    </button>
+                </div>
+                <div class="folder-list" id="folderList">
+                    <p style="color:#64748b; text-align:center; padding:2rem;">Click "Refresh Folders" to load available data folders.</p>
+                </div>
+
+                <!-- Process Button -->
+                <button class="processor-button" id="processBtn" disabled onclick="startProcessing()">
+                    &#9881;&#65039; Process PDFs &amp; Extract Text
+                </button>
+
+                <!-- Processor Progress -->
+                <div id="processorProgress" class="reliefweb-progress">
+                    <div class="reliefweb-progress-header">
+                        <span class="reliefweb-progress-status" id="procProgressStatus">Processing...</span>
+                        <span class="reliefweb-progress-percent" id="procProgressPercent">0%</span>
+                    </div>
+                    <div class="reliefweb-progress-bar-container">
+                        <div class="reliefweb-progress-bar" id="procProgressBar" style="background: linear-gradient(90deg, #7c3aed, #a78bfa);"></div>
+                    </div>
+                    <p class="reliefweb-progress-message" id="procProgressMessage">Starting text extraction...</p>
+                </div>
+
+                <!-- Processor Results -->
+                <div id="processorResults" class="reliefweb-results">
+                    <div class="reliefweb-results-header" style="background: linear-gradient(135deg, #7c3aed, #a78bfa);">
+                        <h2 class="reliefweb-results-title">&#9989; Processing Complete!</h2>
+                        <div class="reliefweb-stats">
+                            <div class="reliefweb-stat">
+                                <div class="reliefweb-stat-value" id="procStatTotal">0</div>
+                                <div class="reliefweb-stat-label">PDFs Processed</div>
+                            </div>
+                            <div class="reliefweb-stat">
+                                <div class="reliefweb-stat-value" id="procStatSuccess">0</div>
+                                <div class="reliefweb-stat-label">Successful</div>
+                            </div>
+                            <div class="reliefweb-stat">
+                                <div class="reliefweb-stat-value" id="procStatFailed">0</div>
+                                <div class="reliefweb-stat-label">Failed</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reliefweb-actions">
+                        <button class="reliefweb-button" style="background:#7c3aed;" id="downloadJsonBtn">
+                            &#128229; Download Full-Text JSON
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // =============================================
+        // CONFIGURABLE API BASE URL
+        // =============================================
+        let API_BASE_URL = 'http://localhost:5000/api';
+
+        function getServerBaseUrl() {
+            return API_BASE_URL.replace(/\/api\/?$/, '');
+        }
+
+        // Settings panel toggle
+        function toggleSettings() {
+            const body = document.getElementById('settingsBody');
+            const arrow = document.getElementById('settingsArrow');
+            body.classList.toggle('open');
+            arrow.classList.toggle('open');
+        }
+
+        // Apply new server URL
+        function applyServerUrl() {
+            const input = document.getElementById('apiUrlInput').value.trim().replace(/\/+$/, '');
+            if (!input) return;
+            API_BASE_URL = input + '/api';
+            checkServerStatus();
+            loadCountries();
+            loadFolders();
+        }
+
+        // =============================================
+        // SERVER STATUS CHECK
+        // =============================================
+        async function checkServerStatus() {
+            const statusDiv = document.getElementById('serverStatus');
+            try {
+                const response = await fetch(API_BASE_URL + '/countries');
+                if (response.ok) {
+                    statusDiv.textContent = '\u2713 Server Online - Ready to fetch documents!';
+                    statusDiv.className = 'status-indicator status-online';
+                } else {
+                    throw new Error('Server returned error');
+                }
+            } catch (error) {
+                statusDiv.textContent = '\u2717 Server Offline - Please start the Flask backend first';
+                statusDiv.className = 'status-indicator status-offline';
+            }
+        }
+        checkServerStatus();
+
+        // =============================================
+        // SECTION 1: DOCUMENT FETCHER
+        // =============================================
+        (function() {
+            'use strict';
+
+            let currentJobId = null;
+            let selectedFolder = null;
+
+            const form = document.getElementById('reliefwebForm');
+            const disasterInput = document.getElementById('disasterName');
+            const countrySelect = document.getElementById('countrySelect');
+            const folderInput = document.getElementById('folderInput');
+            const folderDisplay = document.getElementById('folderDisplay');
+            const progressSection = document.getElementById('reliefwebProgress');
+            const resultsSection = document.getElementById('reliefwebResults');
+            const alertBox = document.getElementById('reliefwebAlert');
+            const alertMessage = document.getElementById('reliefwebAlertMessage');
+            const progressBar = document.getElementById('progressBar');
+            const progressPercent = document.getElementById('progressPercent');
+            const progressStatus = document.getElementById('progressStatus');
+            const progressMessage = document.getElementById('progressMessage');
+            const statReports = document.getElementById('statReports');
+            const statPdfs = document.getElementById('statPdfs');
+            const downloadZipBtn = document.getElementById('downloadZipBtn');
+            const newSearchBtn = document.getElementById('newSearchBtn');
+
+            // Load countries
+            window.loadCountries = async function() {
+                try {
+                    const response = await fetch(API_BASE_URL + '/countries');
+                    const countries = await response.json();
+
+                    // Clear existing options except the first
+                    countrySelect.innerHTML = '<option value="">Select a country...</option>';
+
+                    countries.forEach(function(country) {
+                        const option = document.createElement('option');
+                        option.value = JSON.stringify({code: country.code, name: country.name});
+                        option.textContent = country.name;
+                        countrySelect.appendChild(option);
+                        if (country.code === 'HTI') {
+                            option.selected = true;
+                        }
+                    });
+                } catch (error) {
+                    showAlert('Failed to load countries list. Is the server running?', 'error');
+                }
+            };
+
+            folderInput.addEventListener('change', function(e) {
+                const files = e.target.files;
+                if (files.length > 0) {
+                    selectedFolder = files[0].path || files[0].webkitRelativePath.split('/')[0];
+                    folderDisplay.textContent = '\ud83d\udcc1 ' + selectedFolder;
+                    folderDisplay.classList.add('has-folder');
+                }
+            });
+
+            form.addEventListener('submit', async function(e) {
+                e.preventDefault();
+
+                const disasterName = disasterInput.value.trim();
+                if (!countrySelect.value) {
+                    showAlert('Please select a country', 'error');
+                    return;
+                }
+                const countryData = JSON.parse(countrySelect.value);
+
+                if (!disasterName) {
+                    showAlert('Please fill in all required fields', 'error');
+                    return;
+                }
+
+                await startFetch(disasterName, countryData.code, countryData.name);
+            });
+
+            async function startFetch(disasterName, countryCode, countryName) {
+                try {
+                    hideAlert();
+                    resultsSection.classList.remove('active');
+                    progressSection.classList.add('active');
+                    updateProgress(0, 'Initializing...', 'Connecting to ReliefWeb API...');
+
+                    const outputDir = selectedFolder || './reliefweb_data';
+
+                    const response = await fetch(API_BASE_URL + '/fetch', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({
+                            disaster_name: disasterName,
+                            country_code: countryCode,
+                            country_name: countryName,
+                            output_dir: outputDir
+                        })
+                    });
+
+                    if (!response.ok) throw new Error('Failed to start fetch job');
+
+                    const data = await response.json();
+                    currentJobId = data.job_id;
+                    pollStatus();
+
+                } catch (error) {
+                    showAlert('Error: ' + error.message, 'error');
+                    progressSection.classList.remove('active');
+                }
+            }
+
+            async function pollStatus() {
+                if (!currentJobId) return;
+                try {
+                    const response = await fetch(API_BASE_URL + '/status/' + currentJobId);
+                    const status = await response.json();
+
+                    updateProgress(
+                        status.progress || 0,
+                        status.status || 'Processing...',
+                        status.message || ''
+                    );
+
+                    if (status.status === 'completed') {
+                        showResults(status);
+                    } else if (status.status === 'error') {
+                        showAlert('Error: ' + status.message, 'error');
+                        progressSection.classList.remove('active');
+                    } else {
+                        setTimeout(pollStatus, 1000);
+                    }
+                } catch (error) {
+                    showAlert('Error polling status: ' + error.message, 'error');
+                    progressSection.classList.remove('active');
+                }
+            }
+
+            function updateProgress(percent, status, message) {
+                progressBar.style.width = percent + '%';
+                progressPercent.textContent = Math.round(percent) + '%';
+                progressStatus.textContent = status;
+                progressMessage.textContent = message;
+            }
+
+            function showResults(status) {
+                progressSection.classList.remove('active');
+                resultsSection.classList.add('active');
+                statReports.textContent = status.total_reports || 0;
+                statPdfs.textContent = status.downloaded_pdfs || 0;
+                showAlert('Successfully downloaded ' + (status.downloaded_pdfs || 0) + ' PDFs from ' + (status.total_reports || 0) + ' reports!', 'success');
+            }
+
+            // FIXED: correct download URL with /zip/ path
+            downloadZipBtn.addEventListener('click', function() {
+                if (currentJobId) {
+                    window.open(API_BASE_URL + '/download/zip/' + currentJobId, '_blank');
+                }
+            });
+
+            newSearchBtn.addEventListener('click', function() {
+                resultsSection.classList.remove('active');
+                progressSection.classList.remove('active');
+                hideAlert();
+                disasterInput.value = 'Hurricane Melissa';
+                selectedFolder = null;
+                folderDisplay.textContent = '\ud83d\udcc1 Click to select output folder (or use default: ./reliefweb_data)';
+                folderDisplay.classList.remove('has-folder');
+                currentJobId = null;
+            });
+
+            function showAlert(message, type) {
+                alertMessage.textContent = message;
+                alertBox.className = 'reliefweb-alert active reliefweb-alert-' + type;
+            }
+
+            function hideAlert() {
+                alertBox.classList.remove('active');
+            }
+
+            // Initialize
+            window.loadCountries();
+        })();
+
+        // =============================================
+        // SECTION 2: PDF TEXT PROCESSOR
+        // =============================================
+        (function() {
+            'use strict';
+
+            let selectedProcessFolder = null;
+            let processJobId = null;
+
+            const folderListEl = document.getElementById('folderList');
+            const processBtn = document.getElementById('processBtn');
+            const procProgress = document.getElementById('processorProgress');
+            const procResults = document.getElementById('processorResults');
+            const procAlertBox = document.getElementById('processorAlert');
+            const procAlertMsg = document.getElementById('processorAlertMessage');
+
+            // Load folders from server
+            window.loadFolders = async function() {
+                folderListEl.innerHTML = '<p style="color:#64748b; text-align:center; padding:1rem;">Loading folders...</p>';
+                try {
+                    const response = await fetch(API_BASE_URL + '/folders');
+                    if (!response.ok) throw new Error('Failed to load folders');
+                    const folders = await response.json();
+
+                    if (folders.length === 0) {
+                        folderListEl.innerHTML = '<p style="color:#64748b; text-align:center; padding:2rem;">No data folders found. Fetch some documents first!</p>';
+                        return;
+                    }
+
+                    folderListEl.innerHTML = '';
+                    folders.forEach(function(folder) {
+                        const div = document.createElement('div');
+                        div.className = 'folder-item';
+                        div.onclick = function() { selectFolder(folder.name, div); };
+
+                        const hasJson = folder.has_fulltext_json;
+                        const badgeClass = hasJson ? 'badge-done' : 'badge-ready';
+                        const badgeText = hasJson ? 'Processed' : 'Ready';
+
+                        div.innerHTML = '<div class="folder-item-info">' +
+                            '<span class="folder-item-name">\ud83d\udcc2 ' + folder.name + '</span>' +
+                            '<span class="folder-item-details">' + folder.pdf_count + ' PDFs | JSON: ' + (folder.has_json ? 'Yes' : 'No') + '</span>' +
+                            '</div>' +
+                            '<span class="folder-item-badge ' + badgeClass + '">' + badgeText + '</span>';
+
+                        folderListEl.appendChild(div);
+                    });
+                } catch (error) {
+                    folderListEl.innerHTML = '<p style="color:#991b1b; text-align:center; padding:2rem;">Error loading folders. Is the server running?</p>';
+                }
+            };
+
+            function selectFolder(folderName, element) {
+                document.querySelectorAll('.folder-item').forEach(function(el) { el.classList.remove('selected'); });
+                element.classList.add('selected');
+                selectedProcessFolder = folderName;
+                processBtn.disabled = false;
+            }
+
+            window.startProcessing = async function() {
+                if (!selectedProcessFolder) return;
+
+                hideProcAlert();
+                procResults.classList.remove('active');
+                procProgress.classList.add('active');
+                processBtn.disabled = true;
+                updateProcProgress(0, 'Starting...', 'Initializing text extraction...');
+
+                try {
+                    const response = await fetch(API_BASE_URL + '/process', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ folder_name: selectedProcessFolder })
+                    });
+
+                    if (!response.ok) {
+                        const err = await response.json();
+                        throw new Error(err.error || 'Failed to start processing');
+                    }
+
+                    const data = await response.json();
+                    processJobId = data.job_id;
+                    pollProcessStatus();
+
+                } catch (error) {
+                    showProcAlert('Error: ' + error.message, 'error');
+                    procProgress.classList.remove('active');
+                    processBtn.disabled = false;
+                }
+            };
+
+            async function pollProcessStatus() {
+                if (!processJobId) return;
+                try {
+                    const response = await fetch(API_BASE_URL + '/process/status/' + processJobId);
+                    const status = await response.json();
+
+                    updateProcProgress(
+                        status.progress || 0,
+                        status.status || 'Processing...',
+                        status.message || ''
+                    );
+
+                    if (status.status === 'completed') {
+                        showProcResults(status);
+                    } else if (status.status === 'error') {
+                        showProcAlert('Error: ' + status.message, 'error');
+                        procProgress.classList.remove('active');
+                        processBtn.disabled = false;
+                    } else {
+                        setTimeout(pollProcessStatus, 1000);
+                    }
+                } catch (error) {
+                    showProcAlert('Error polling status: ' + error.message, 'error');
+                    procProgress.classList.remove('active');
+                    processBtn.disabled = false;
+                }
+            }
+
+            function updateProcProgress(percent, status, message) {
+                document.getElementById('procProgressBar').style.width = percent + '%';
+                document.getElementById('procProgressPercent').textContent = Math.round(percent) + '%';
+                document.getElementById('procProgressStatus').textContent = status;
+                document.getElementById('procProgressMessage').textContent = message;
+            }
+
+            function showProcResults(status) {
+                procProgress.classList.remove('active');
+                procResults.classList.add('active');
+                processBtn.disabled = false;
+
+                document.getElementById('procStatTotal').textContent = status.total_pdfs || 0;
+                document.getElementById('procStatSuccess').textContent = status.successful || 0;
+                document.getElementById('procStatFailed').textContent = status.failed || 0;
+
+                showProcAlert('Processing complete! ' + (status.successful || 0) + ' PDFs extracted successfully.', 'success');
+
+                // Refresh folder list to show updated status
+                window.loadFolders();
+            }
+
+            document.getElementById('downloadJsonBtn').addEventListener('click', function() {
+                if (processJobId) {
+                    window.open(API_BASE_URL + '/process/download/' + processJobId, '_blank');
+                }
+            });
+
+            function showProcAlert(message, type) {
+                procAlertMsg.textContent = message;
+                procAlertBox.className = 'reliefweb-alert active reliefweb-alert-' + type;
+            }
+
+            function hideProcAlert() {
+                procAlertBox.classList.remove('active');
+            }
+        })();
+    </script>
+</body>
+</html>

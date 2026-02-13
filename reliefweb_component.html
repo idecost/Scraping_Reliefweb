@@ -1,0 +1,597 @@
+<!-- ReliefWeb Document Fetcher Component -->
+<!-- This component can be integrated into any existing HTML page -->
+
+<style>
+  /* ReliefWeb Fetcher Styles - Scoped with .reliefweb-fetcher prefix */
+  .reliefweb-fetcher {
+    --relief-primary: #2c5aa0;
+    --relief-secondary: #e8734e;
+    --relief-success: #10b981;
+    --relief-error: #ef4444;
+    --relief-warning: #f59e0b;
+    --relief-bg: #ffffff;
+    --relief-surface: #f8fafc;
+    --relief-border: #e2e8f0;
+    --relief-text: #1e293b;
+    --relief-text-light: #64748b;
+    
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+
+  .reliefweb-card {
+    background: var(--relief-bg);
+    border-radius: 12px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
+    padding: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .reliefweb-header {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 2px solid var(--relief-border);
+  }
+
+  .reliefweb-header h1 {
+    color: var(--relief-primary);
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0 0 0.5rem 0;
+  }
+
+  .reliefweb-header p {
+    color: var(--relief-text-light);
+    font-size: 1rem;
+    margin: 0;
+  }
+
+  .reliefweb-form {
+    display: grid;
+    gap: 1.5rem;
+  }
+
+  .reliefweb-form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .reliefweb-label {
+    font-weight: 600;
+    color: var(--relief-text);
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+  }
+
+  .reliefweb-input,
+  .reliefweb-select {
+    padding: 0.75rem 1rem;
+    border: 2px solid var(--relief-border);
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.2s ease;
+    background: var(--relief-bg);
+    color: var(--relief-text);
+  }
+
+  .reliefweb-input:focus,
+  .reliefweb-select:focus {
+    outline: none;
+    border-color: var(--relief-primary);
+    box-shadow: 0 0 0 3px rgba(44, 90, 160, 0.1);
+  }
+
+  .reliefweb-button {
+    padding: 1rem 2rem;
+    background: var(--relief-primary);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+  }
+
+  .reliefweb-button:hover:not(:disabled) {
+    background: #234a85;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(44, 90, 160, 0.3);
+  }
+
+  .reliefweb-button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+  .reliefweb-button-secondary {
+    background: var(--relief-secondary);
+  }
+
+  .reliefweb-button-secondary:hover:not(:disabled) {
+    background: #d46839;
+  }
+
+  .reliefweb-progress {
+    margin-top: 2rem;
+    display: none;
+  }
+
+  .reliefweb-progress.active {
+    display: block;
+  }
+
+  .reliefweb-progress-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  .reliefweb-progress-status {
+    font-weight: 600;
+    color: var(--relief-text);
+  }
+
+  .reliefweb-progress-percent {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--relief-primary);
+  }
+
+  .reliefweb-progress-bar-container {
+    height: 12px;
+    background: var(--relief-surface);
+    border-radius: 6px;
+    overflow: hidden;
+    margin-bottom: 0.5rem;
+  }
+
+  .reliefweb-progress-bar {
+    height: 100%;
+    background: linear-gradient(90deg, var(--relief-primary), var(--relief-secondary));
+    border-radius: 6px;
+    transition: width 0.3s ease;
+    width: 0%;
+  }
+
+  .reliefweb-progress-message {
+    color: var(--relief-text-light);
+    font-size: 0.875rem;
+    text-align: center;
+  }
+
+  .reliefweb-results {
+    margin-top: 2rem;
+    display: none;
+  }
+
+  .reliefweb-results.active {
+    display: block;
+  }
+
+  .reliefweb-results-header {
+    background: linear-gradient(135deg, var(--relief-primary), var(--relief-secondary));
+    color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+  }
+
+  .reliefweb-results-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0 0 1rem 0;
+  }
+
+  .reliefweb-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+
+  .reliefweb-stat {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 1rem;
+    border-radius: 6px;
+    backdrop-filter: blur(10px);
+  }
+
+  .reliefweb-stat-value {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+  }
+
+  .reliefweb-stat-label {
+    font-size: 0.875rem;
+    opacity: 0.9;
+  }
+
+  .reliefweb-actions {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .reliefweb-alert {
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    display: none;
+  }
+
+  .reliefweb-alert.active {
+    display: block;
+  }
+
+  .reliefweb-alert-error {
+    background: #fee2e2;
+    border: 1px solid var(--relief-error);
+    color: #991b1b;
+  }
+
+  .reliefweb-alert-success {
+    background: #d1fae5;
+    border: 1px solid var(--relief-success);
+    color: #065f46;
+  }
+
+  .reliefweb-folder-input-wrapper {
+    position: relative;
+  }
+
+  .reliefweb-folder-input {
+    display: none;
+  }
+
+  .reliefweb-folder-display {
+    padding: 0.75rem 1rem;
+    border: 2px dashed var(--relief-border);
+    border-radius: 8px;
+    background: var(--relief-surface);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-align: center;
+    color: var(--relief-text-light);
+  }
+
+  .reliefweb-folder-display:hover {
+    border-color: var(--relief-primary);
+    background: white;
+  }
+
+  .reliefweb-folder-display.has-folder {
+    border-style: solid;
+    border-color: var(--relief-success);
+    color: var(--relief-text);
+  }
+
+  @keyframes reliefweb-pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+  }
+
+  .reliefweb-loading {
+    animation: reliefweb-pulse 2s ease-in-out infinite;
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .reliefweb-header h1 {
+      font-size: 1.5rem;
+    }
+
+    .reliefweb-card {
+      padding: 1.5rem;
+    }
+
+    .reliefweb-actions {
+      flex-direction: column;
+    }
+
+    .reliefweb-button {
+      width: 100%;
+    }
+  }
+</style>
+
+<div class="reliefweb-fetcher" id="reliefwebFetcher">
+  <div class="reliefweb-card">
+    <div class="reliefweb-header">
+      <h1>🌍 ReliefWeb Document Fetcher</h1>
+      <p>Download disaster reports and PDFs from ReliefWeb API</p>
+    </div>
+
+    <!-- Alert Messages -->
+    <div id="reliefwebAlert" class="reliefweb-alert">
+      <span id="reliefwebAlertMessage"></span>
+    </div>
+
+    <!-- Form -->
+    <form id="reliefwebForm" class="reliefweb-form">
+      <div class="reliefweb-form-group">
+        <label class="reliefweb-label" for="disasterName">Disaster Name</label>
+        <input 
+          type="text" 
+          id="disasterName" 
+          class="reliefweb-input" 
+          placeholder="e.g., Hurricane Melissa, Earthquake, Typhoon Haiyan"
+          required
+        />
+      </div>
+
+      <div class="reliefweb-form-group">
+        <label class="reliefweb-label" for="countrySelect">Country</label>
+        <select id="countrySelect" class="reliefweb-select" required>
+          <option value="">Select a country...</option>
+        </select>
+      </div>
+
+      <div class="reliefweb-form-group">
+        <label class="reliefweb-label">Output Folder (Optional)</label>
+        <div class="reliefweb-folder-input-wrapper">
+          <input 
+            type="file" 
+            id="folderInput" 
+            class="reliefweb-folder-input" 
+            webkitdirectory 
+            directory 
+            multiple
+          />
+          <div id="folderDisplay" class="reliefweb-folder-display" onclick="document.getElementById('folderInput').click()">
+            📁 Click to select output folder (or use default)
+          </div>
+        </div>
+      </div>
+
+      <button type="submit" class="reliefweb-button">
+        🚀 Fetch Documents
+      </button>
+    </form>
+
+    <!-- Progress Indicator -->
+    <div id="reliefwebProgress" class="reliefweb-progress">
+      <div class="reliefweb-progress-header">
+        <span class="reliefweb-progress-status" id="progressStatus">Initializing...</span>
+        <span class="reliefweb-progress-percent" id="progressPercent">0%</span>
+      </div>
+      <div class="reliefweb-progress-bar-container">
+        <div class="reliefweb-progress-bar" id="progressBar"></div>
+      </div>
+      <p class="reliefweb-progress-message" id="progressMessage">Starting download...</p>
+    </div>
+
+    <!-- Results -->
+    <div id="reliefwebResults" class="reliefweb-results">
+      <div class="reliefweb-results-header">
+        <h2 class="reliefweb-results-title">✅ Download Complete!</h2>
+        <div class="reliefweb-stats">
+          <div class="reliefweb-stat">
+            <div class="reliefweb-stat-value" id="statReports">0</div>
+            <div class="reliefweb-stat-label">Reports Found</div>
+          </div>
+          <div class="reliefweb-stat">
+            <div class="reliefweb-stat-value" id="statPdfs">0</div>
+            <div class="reliefweb-stat-label">PDFs Downloaded</div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="reliefweb-actions">
+        <button class="reliefweb-button reliefweb-button-secondary" id="downloadZipBtn">
+          📦 Download ZIP File
+        </button>
+        <button class="reliefweb-button" id="newSearchBtn">
+          🔄 New Search
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  // ReliefWeb Fetcher JavaScript - Scoped to avoid conflicts
+  (function() {
+    'use strict';
+    
+    const API_BASE_URL = 'http://localhost:5000/api';
+    let currentJobId = null;
+    let selectedFolder = null;
+
+    // DOM Elements
+    const form = document.getElementById('reliefwebForm');
+    const disasterInput = document.getElementById('disasterName');
+    const countrySelect = document.getElementById('countrySelect');
+    const folderInput = document.getElementById('folderInput');
+    const folderDisplay = document.getElementById('folderDisplay');
+    const progressSection = document.getElementById('reliefwebProgress');
+    const resultsSection = document.getElementById('reliefwebResults');
+    const alertBox = document.getElementById('reliefwebAlert');
+    const alertMessage = document.getElementById('reliefwebAlertMessage');
+    const progressBar = document.getElementById('progressBar');
+    const progressPercent = document.getElementById('progressPercent');
+    const progressStatus = document.getElementById('progressStatus');
+    const progressMessage = document.getElementById('progressMessage');
+    const statReports = document.getElementById('statReports');
+    const statPdfs = document.getElementById('statPdfs');
+    const downloadZipBtn = document.getElementById('downloadZipBtn');
+    const newSearchBtn = document.getElementById('newSearchBtn');
+
+    // Load countries on page load
+    async function loadCountries() {
+      try {
+        const response = await fetch(`${API_BASE_URL}/countries`);
+        const countries = await response.json();
+        
+        countries.forEach(country => {
+          const option = document.createElement('option');
+          option.value = JSON.stringify({code: country.code, name: country.name});
+          option.textContent = country.name;
+          countrySelect.appendChild(option);
+        });
+      } catch (error) {
+        showAlert('Failed to load countries list', 'error');
+      }
+    }
+
+    // Folder selection handler
+    folderInput.addEventListener('change', function(e) {
+      const files = e.target.files;
+      if (files.length > 0) {
+        selectedFolder = files[0].path || files[0].webkitRelativePath.split('/')[0];
+        folderDisplay.textContent = `📁 ${selectedFolder}`;
+        folderDisplay.classList.add('has-folder');
+      }
+    });
+
+    // Form submission
+    form.addEventListener('submit', async function(e) {
+      e.preventDefault();
+      
+      const disasterName = disasterInput.value.trim();
+      const countryData = JSON.parse(countrySelect.value);
+      
+      if (!disasterName || !countryData) {
+        showAlert('Please fill in all required fields', 'error');
+        return;
+      }
+
+      // Start the fetch process
+      await startFetch(disasterName, countryData.code, countryData.name);
+    });
+
+    // Start fetch process
+    async function startFetch(disasterName, countryCode, countryName) {
+      try {
+        // Reset UI
+        hideAlert();
+        resultsSection.classList.remove('active');
+        progressSection.classList.add('active');
+        updateProgress(0, 'Initializing...', 'Connecting to ReliefWeb API...');
+
+        // Prepare output directory
+        const outputDir = selectedFolder || './reliefweb_data';
+
+        // Start fetch job
+        const response = await fetch(`${API_BASE_URL}/fetch`, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+            disaster_name: disasterName,
+            country_code: countryCode,
+            country_name: countryName,
+            output_dir: outputDir
+          })
+        });
+
+        if (!response.ok) {
+          throw new Error('Failed to start fetch job');
+        }
+
+        const data = await response.json();
+        currentJobId = data.job_id;
+
+        // Poll for status updates
+        pollStatus();
+
+      } catch (error) {
+        showAlert(`Error: ${error.message}`, 'error');
+        progressSection.classList.remove('active');
+      }
+    }
+
+    // Poll for job status
+    async function pollStatus() {
+      if (!currentJobId) return;
+
+      try {
+        const response = await fetch(`${API_BASE_URL}/status/${currentJobId}`);
+        const status = await response.json();
+
+        // Update progress
+        updateProgress(
+          status.progress || 0,
+          status.status || 'Processing...',
+          status.message || ''
+        );
+
+        if (status.status === 'completed') {
+          // Show results
+          showResults(status);
+        } else if (status.status === 'error') {
+          showAlert(`Error: ${status.message}`, 'error');
+          progressSection.classList.remove('active');
+        } else {
+          // Continue polling
+          setTimeout(pollStatus, 1000);
+        }
+
+      } catch (error) {
+        showAlert(`Error polling status: ${error.message}`, 'error');
+        progressSection.classList.remove('active');
+      }
+    }
+
+    // Update progress UI
+    function updateProgress(percent, status, message) {
+      progressBar.style.width = `${percent}%`;
+      progressPercent.textContent = `${Math.round(percent)}%`;
+      progressStatus.textContent = status;
+      progressMessage.textContent = message;
+    }
+
+    // Show results
+    function showResults(status) {
+      progressSection.classList.remove('active');
+      resultsSection.classList.add('active');
+
+      statReports.textContent = status.total_reports || 0;
+      statPdfs.textContent = status.downloaded_pdfs || 0;
+
+      showAlert(`Successfully downloaded ${status.downloaded_pdfs} PDFs from ${status.total_reports} reports!`, 'success');
+    }
+
+    // Download ZIP button
+    downloadZipBtn.addEventListener('click', function() {
+      if (currentJobId) {
+        window.open(`${API_BASE_URL}/download/${currentJobId}`, '_blank');
+      }
+    });
+
+    // New search button
+    newSearchBtn.addEventListener('click', function() {
+      resultsSection.classList.remove('active');
+      progressSection.classList.remove('active');
+      hideAlert();
+      form.reset();
+      selectedFolder = null;
+      folderDisplay.textContent = '📁 Click to select output folder (or use default)';
+      folderDisplay.classList.remove('has-folder');
+      currentJobId = null;
+    });
+
+    // Show alert
+    function showAlert(message, type) {
+      alertMessage.textContent = message;
+      alertBox.className = `reliefweb-alert active reliefweb-alert-${type}`;
+    }
+
+    // Hide alert
+    function hideAlert() {
+      alertBox.classList.remove('active');
+    }
+
+    // Initialize
+    loadCountries();
+  })();
+</script>
