@@ -334,8 +334,6 @@ def process_pdfs(source_json_path: str, pdf_directory: str, output_json_path: st
                 },
                 "url": matched_report.get('url', ''),
                 "sources": source_names,
-                "countries": country_names,
-                "disasters": disaster_names,
                 "language": language_name,
                 "body_text": matched_report.get('body_text', matched_report.get('content', {}).get('body_text', ''))
             })
@@ -346,8 +344,6 @@ def process_pdfs(source_json_path: str, pdf_directory: str, output_json_path: st
                 "date": {"created": "", "changed": "", "original": ""},
                 "url": "",
                 "sources": [],
-                "countries": [],
-                "disasters": [],
                 "language": "",
                 "body_text": ""
             })
