@@ -647,7 +647,7 @@
             <div class="settings-body" id="settingsBody">
                 <div class="settings-row">
                     <label for="apiUrlInput">API Base URL:</label>
-                    <input type="text" id="apiUrlInput" value="http://localhost:5000" placeholder="http://localhost:5000" />
+                    <input type="text" id="apiUrlInput" value="" placeholder="Auto-detected (or enter manually)" placeholder="http://localhost:5000" />
                     <button onclick="applyServerUrl()">Apply &amp; Reconnect</button>
                 </div>
                 <p class="settings-hint">
@@ -844,7 +844,17 @@
         // =============================================
         // CONFIGURABLE API BASE URL
         // =============================================
-        let API_BASE_URL = 'http://localhost:5000/api';
+        // Auto-detect: if served from the Flask server, use same origin.
+        // If opened as a local file or from GitHub Pages, default to localhost.
+        let API_BASE_URL = (function() {
+            const loc = window.location;
+            // If served from a real server (not file://), use same origin
+            if (loc.protocol !== 'file:' && !loc.hostname.includes('github.io')) {
+                return loc.origin + '/api';
+            }
+            // Default for local file or GitHub Pages
+            return 'http://localhost:5000/api';
+        })();
 
         function getServerBaseUrl() {
             return API_BASE_URL.replace(/\/api\/?$/, '');
@@ -863,7 +873,9 @@
             const input = document.getElementById('apiUrlInput').value.trim().replace(/\/+$/, '');
             if (!input) return;
             API_BASE_URL = input + '/api';
-            checkServerStatus();
+            // Populate settings input with detected URL
+        document.getElementById('apiUrlInput').value = API_BASE_URL.replace('/api', '');
+        checkServerStatus();
             loadCountries();
             loadFolders();
         }
